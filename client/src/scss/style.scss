@@ -1,0 +1,322 @@
+// If you want to override variables do it here
+/* You can add global styles to this file, and also import other style files */
+
+@import "variables";
+
+@import url("../assets/fonts/nexa/font.css");
+@import url("util.css");
+
+/***** login-signup form *****/
+
+@font-face {
+  font-family: bhaskar;
+  src: url(Bhaskar-Normal.ttf);
+  /* font-family: chanakya; */
+  /* src: url(Chanakya-Regular.ttf); */
+}
+
+.bhaskar-class {
+  font-family: bhaskar;
+  color: black;
+  font-size: 18px;
+}
+
+body {
+  font-size: 14px;
+  // background-color: $clrwhite;
+  background-color: #e4e5e6;
+}
+
+.main {
+  min-height: 100vh;
+  padding-top: 30px;
+  // padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.custom-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+a {
+  transition: all 0.4s ease 0s;
+}
+
+button:focus {
+  outline: none;
+}
+
+.theme-dark {
+  background-color: $themeDark !important;
+}
+
+.theme-primary {
+  background-color: $primaryClr !important;
+}
+
+.theme-secondary {
+  background-color: $secondaryClr !important;
+}
+
+.theme-dark,
+.dark-theme {
+  background-color: $themeDark !important;
+}
+
+.theme-primary,
+.theme-bg {
+  background-color: $primaryClr !important;
+}
+
+
+.box-shadow {
+  box-shadow: 0px 0px 4px 1px #cfcfcf;
+}
+
+.border-radius {
+  border-radius: 5px;
+}
+
+table.dataTable.no-footer {
+  // margin-bottom: 25px;
+  width: 100% !important;
+}
+
+.m-lr-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.bg-black,
+.black-bg {
+  background-color: $clrblack !important;
+}
+
+.bg-gray,
+.gray-bg {
+  background-color: #f5f5f5 !important;
+}
+
+.white-bg,
+.bg-white {
+  background-color: $clrwhite !important;
+}
+
+.bg-primary,
+.primary-bg {
+  background-color: $primaryClr !important;
+}
+
+.bg-secondary,
+.secondary-bg {
+  background-color: $secondaryClr !important;
+}
+
+.clr-white,
+.white-clr {
+  color: $clrwhite !important;
+}
+
+.clr-black,
+.black-clr {
+  color: $clrblack !important;
+}
+
+.clr-primary,
+.primary-clr {
+  color: $primaryClr !important;
+}
+
+.clr-secondary,
+.secondary-clr {
+  color: $secondaryClr !important;
+}
+
+.btn {
+  transition: all 0.4s ease 0s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary,
+.btn.btn-default,
+.btn-danger {
+  @include btnDefaultProperty;
+}
+
+.btn-default {
+  background-color: $bgGray;
+}
+
+.btn.btn-primary:not(:disabled):not(.disabled),
+.btn.btn-primary:not(:disabled):not(.disabled),
+.btn.btn-primary:not(:disabled):not(.disabled),
+.btn.btn-primary:not(:disabled):not(.disabled) {
+  @include btnPrimary;
+}
+
+.btn-transparent {
+  @include btnTransparent;
+}
+
+.btn.btn-primary:not(:disabled):not(.disabled):hover,
+.btn.btn-primary:not(:disabled):not(.disabled):focus,
+.btn.btn-primary:not(:disabled):not(.disabled):active {
+  @include btnPrimaryHover;
+}
+
+.sidebar .nav-dropdown .nav-dropdown-items app-sidebar-nav-link a {
+  padding-left: 30px;
+  // background-color: #f5f5f5 ;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+input[type="radio"]:after {
+  width: 16px;
+  height: 16px;
+  border-radius: 15px;
+  top: -1px;
+  left: -2px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid $primaryBtnClr;
+}
+
+input[type="radio"]:checked:after {
+  width: 16px;
+  height: 16px;
+  border-radius: 15px;
+  top: -1px;
+  left: -2px;
+  position: relative;
+  background-color: $primaryBtnClr;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid $primaryBtnClr;
+}
+
+.form-check-input:checked {
+  background-color: $primaryBtnClr;
+  border-color: $primaryBtnClr;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.form-check-input:focus {
+  border-color: $primaryBtnClr;
+  outline: 0;
+  box-shadow: none;
+  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.toast-container .ngx-toastr {
+  width: 350px !important;
+}
+
+.toast-success {
+  background-color: $primaryClr !important;
+}
+
+.alert {
+  padding: .5rem 1rem;
+}
+
+.edit {
+  background-color: $primaryBtnClr;
+  color: $clrwhite;
+}
+
+.delete {
+  background-color: #d20707;
+  color: $clrwhite;
+}
+
+.switch-medium small {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.switch .on {
+  top: 14% !important;
+  left: 15% !important;
+}
+
+.switch-medium.switch-labeled.checked small {
+  left: 50px !important;
+}
+
+.switch .off {
+  top: 14% !important;
+  right: 8% !important;
+}
+
+.switch-medium.switch-labeled {
+  width: 78px !important;
+}
+
+.switch-medium {
+  width: 50px !important;
+  height: 27px !important;
+  border-radius: 30px;
+}
+
+.switch-medium.switch-labeled.checked small {
+  left: 54px !important;
+}
+
+.modal {
+  .close {
+    background: none;
+    border-style: none;
+    outline: 0;
+    color: $clrwhite;
+
+    span {
+      font-size: 22px;
+    }
+  }
+}
+
+.modal-header {
+  background: $primaryClr;
+  color: $clrwhite;
+  border-bottom: 0px;
+}
+
+.alert {
+  margin-bottom: 0rem;
+}
+
+hr {
+  opacity: 0.10 !important;
+}
+
+.loading-text {
+  width: 25% !important;
+  text-align: center !important;
+}
+
+
+/* .la-ball-scale-multiple{
+  display: inline-block !important;
+  float: none !important;
+  background-color: #40BFDF00 !important;
+  border: 0 solid !important;
+} */
+
+.la-ball-scale-multiple {
+  display: inline-block !important;
+  float: none !important;
+  background-color: #40BFDF00 !important;
+  border: 0 solid !important;
+}

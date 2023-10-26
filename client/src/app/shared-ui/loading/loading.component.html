@@ -1,0 +1,26 @@
+<ngx-spinner
+  bdOpacity=1
+  bdColor="rgba(186,186,186,0.42)"
+  size="medium" color="#004D40"
+  type="ball-scale-multiple"
+  [fullScreen]="true">
+  <p style="color: #5e72e4; font-weight: 500;font-size: 16px;"> Loading... Please Wait. </p>
+</ngx-spinner>
+
+
+
+<!-- <ngx-spinner *ngIf="timeLeft < 101" bdOpacity=1 bdColor="00FFFFFF" size="small" color="00FFFFFF"
+  type="ball-scale-multiple" [fullScreen]="true">
+  <span [ngClass]="{'text-success': timeLeft === 0, 'text-black': timeLeft !== 0}" style="font-size: 14px;">
+    {{timeLeft === 100 ? 'Completed.' : 'Loading...'}}</span> <br>
+  <br>
+  <div class="progress">
+    <div class="progress-bar custom-loading-bg" role="progressbar" aria-valuenow="100%" aria-valuemin="0"
+      aria-valuemax="100" [style.width.%]="timeLeft">
+      <span class="sr-only"></span>
+    </div>
+  </div>
+  <br>
+  <span class="badge rounded-pill custom-loading-bg p-2 " style="font-size: 14px;"> {{timeLeft}} %</span>
+
+</ngx-spinner> -->

@@ -1,0 +1,116 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* You can add global styles to this file, and also import other style files */
+.table-bordered,
+.table-bordered td,
+.table-bordered th {
+   border: 1px solid #e1e6f1 !important;
+}
+
+.dataTables_wrapper .dataTables_filter {
+   float: right;
+   text-align: right;
+   padding-bottom: 5px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+   color: white !important;
+   background: #5e72e4 !important;
+
+}
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+   color: white !important;
+   background: #5e72e4 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+   font-size: 14px;
+}
+
+.table {
+   width: 100% !important;
+}
+
+.dataTables_wrapper .dataTables_scroll {
+   margin-bottom: 16px;
+}
+
+.dataTables_scrollHeadInner {
+   width: calc(100% - 17px) !important;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+   border: none !important;
+}
+
+.table.dataTable {
+   border-collapse: separate !important;
+}
+
+@media (max-width: 991px) {
+   .app-body {
+      margin-top: 0px !important;
+   }
+
+   .app-header .navbar-brand {
+      top: 0px !important;
+   }
+
+   .app-header .navbar-toggler {
+      position: absolute !important;
+      left: 150px !important;
+      top: 14px !important;
+   }
+}
+
+
+.tooltip-text {
+   visibility: hidden;
+   position: absolute;
+   z-index: 1;
+   width: 100px;
+   color: white;
+   font-size: 10px;
+   background-color: #73818f;
+   border-radius: 10px;
+   padding: 3px 3px 3px 3px;
+}
+
+.hover-text:hover .tooltip-text {
+   visibility: visible;
+}
+
+#top {
+   top: -50px;
+   left: -50%;
+}
+
+#bottom {
+   top: 32px;
+   left: -50%;
+}
+
+#left {
+   top: -8px;
+   right: 120%;
+}
+
+#right {
+   top: -8px;
+   left: 120%;
+}
+
+.hover-text {
+   position: relative;
+   display: inline-block;
+   font-family: Arial;
+   text-align: center;
+}
+
+.main-login-body::-webkit-scrollbar {
+   display: none;
+}

@@ -1,0 +1,60 @@
+// Variable overrides
+
+$secondaryBtnClr:#00BFA5;
+$secondaryClr:#00BFA5;
+$primaryBtnClr: #004D40;
+$primaryClr:#004D40;
+$clrwhite: #fff;
+$clrblack:#19151d;
+$noramalAnimation: all 0.4s ease 0s;
+$bgTransparent:transparent;
+$themeDark:#19151d;
+$bgGray:#dbd9d9;
+$danger:red;
+$alice:#f0f8ff;
+
+@mixin btnTransparent {
+  background: transparent;
+  border: 0;
+}
+
+@mixin btnPrimary {
+  display: inline-block;
+  background-color: $primaryBtnClr;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: none;
+}
+
+@mixin carouselControl {
+  top: 50%;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@mixin btnPrimaryHover {
+  background-color: #004d40b5;
+}
+
+@mixin btnDefaultProperty {
+  min-width: 140px;
+  font-size: 15px;
+  padding: 10px 17px;
+  border: 0;
+}
+
+@function HoverOver($color, $opacity) {
+  @return rgba($color, $opacity);
+}
+
+.text-secondary {
+  color: $secondaryClr !important;
+}

@@ -1,0 +1,51 @@
+<br> <br> <br>
+<div class="row pt-5">
+   <div class="col-xl-4 col-lg-5 col-md-12 d-flex flex-column  card m-auto">
+      <div class="card card-plain">
+         <div>
+            <img src="../../../../assets/img/AMW_Logo.png" class="mx-auto d-block pt-4" style="width:50%" alt="">
+         </div>
+         <div class="card-header pb-0 text-start">
+            <h4 class="font-weight-bolder">Sign In</h4>
+            <p class="mb-0">Enter your email and password to sign in</p>
+         </div>
+         <div class="card-body">
+            <form role="form">
+               <div class="mb-3">
+                  <input required type="email" name="email" class="form-control form-control-lg" placeholder="Email"
+                     aria-label="Email" [(ngModel)]="loginObject.email">
+               </div>
+               <div class="mb-3">
+                  <input required type="password" name="password" class="form-control form-control-lg"
+                     placeholder="Password" aria-label="Password" [(ngModel)]="loginObject.password">
+               </div>
+               <div class="form-check form-switch">
+                  <input class="form-check-input" name="remember" checked type="checkbox" id="rememberMe"
+                     [(ngModel)]="loginObject.remember">
+                  <label class="form-check-label" for="rememberMe">Remember me</label>
+               </div>
+
+               <div class="row pt-3">
+                  <div class="col-md-12 d-flex justify-content-center">
+                     <button (click)="doLogin()" style="width: 200px;" type="button" class="btn btn-primary">
+                        Sign in
+                     </button>
+                  </div>
+               </div>
+               <!-- <div>
+                  <asl-google-signin-button class="p-3" type="standard" size="large"
+                     *ngIf="!user"></asl-google-signin-button>
+
+                  <div *ngIf="user">
+                     <div>
+                        <h4>{{ user.name }}</h4>
+                        <p>{{ user.email }}</p>
+                     </div>
+                  </div>
+               </div> -->
+
+            </form>
+         </div>
+      </div>
+   </div>
+</div>

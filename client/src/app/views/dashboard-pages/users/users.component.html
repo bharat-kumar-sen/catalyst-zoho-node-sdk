@@ -1,0 +1,255 @@
+<div class="px-4">
+   <div class="card container-fluid p-3 table-responsive" style="min-height: 450px;">
+      <div class="row">
+         <div class="col-sm-12">
+            <h4 class="text-primary pb-2 users-tag">
+               <i class="bi bi-list-task px-2"></i>List of Users
+               <button type="button" class="btn btn-sm px-3 btn-primary float-end" (click)="showUserModal()">
+                  <i class="bi bi-plus-square pe-2"></i>
+                  Add User
+               </button>
+            </h4>
+         </div>
+      </div>
+      <table [dtOptions]="dtOptions" datatable [dtTrigger]="dtTrigger"
+         class="table table-bordered table-hover table-striped user-table-font">
+         <thead>
+            <tr class="text-nowrap">
+               <!-- <th class="text-center">S.NO</th> -->
+               <th>Table Row ID</th>
+               <th>User Name</th>
+               <th>Email ID</th>
+               <th>Phone</th>
+               <th>Role</th>
+               <th>Status</th>
+               <th class="text-center w-25">ACTION</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let user of userList; let i=index">
+               <!-- <th>{{i+customStart}}</th> -->
+               <th >{{user.ROWID}}</th>
+               <td>{{user.first_name}} {{user.last_name}}</td>
+               <td>{{user.email}}</td>
+               <td>{{user.phone_number}}</td>
+               <td>{{user.role == 1 ? 'Admin' : 'User'}}</td>
+               <td class="text-center">
+                  <ui-switch (change)="changeUserStatus(user)" [(ngModel)]="user.is_active" color="#4285F4"
+                     defaultBgColor="#d9d9d9" labelOn="ON" labelOff="OFF">
+                  </ui-switch>
+               </td>
+               <td class="text-center">
+                  <div class="d-flex justify-content-center">
+                     <!-- <button type="button" class="btn me-1 btn-primary hover-text" (click)="showUserInfoModal(user)">
+                        <i class="fa fa-info-circle"></i>
+                        <span class="tooltip-text" id="bottom">View Full Information</span>
+                     </button> -->
+                     <button type="button" class="btn me-1 btn-primary hover-text" (click)="showUserModal(user)">
+                        <i class="bi bi-pencil-square"></i>
+                        <span class="tooltip-text" id="bottom">Edit Information</span>
+                     </button>
+                     <button type="button" class="btn btn-danger hover-text" (click)="showDeleteUserModal(user)">
+                        <i class="bi bi-trash p-0"></i>
+                        <span class="tooltip-text" id="left">Delete Account</span>
+                     </button>
+                  </div>
+               </td>
+            </tr>
+         </tbody>
+         <tbody *ngIf="userList?.length == 0" class="text-center">
+            <tr>
+               <td colspan="10" class="no-data-available">No data!</td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+   <!-- <pre [innerHtml]="userList | json"> </pre> -->
+</div>
+
+
+<!-- Add User Model -->
+<div bsModal #addUserModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+   aria-hidden="true" [config]="{backdrop: 'static', keyboard: false, animated: true}">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title"><i class="bi bi-database-add pe-2"></i>{{userForm?.value?.ROWID ? 'Edit':'Add'}} User</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeModel()">
+               <i class="bi bi-x-circle"></i>
+            </button>
+         </div>
+         <div class="modal-body pb-0">
+            <form [formGroup]="userForm" (ngSubmit)="addUser()">
+               <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                     <div class="row mb-1">
+                        <div class="row">
+                           <div class="col">
+                              <label class="form-label">First Name:</label>
+                              <input formControlName="first_name" type="text" class="form-control"
+                                 placeholder="Please Enter User First Name Here"
+                                 [ngClass]="{ 'is-invalid': submitted && myForm['first_name'].errors || (myForm['first_name'].errors &&  (userForm.controls['first_name'].dirty || userForm.controls['first_name'].touched )),
+                                 'is-valid': !userForm.get('first_name').errors && (userForm.get('first_name').dirty || userForm.get('first_name').touched)}">
+                              <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                                 *ngIf="(registerFormControl.first_name.touched || submitted) && registerFormControl.first_name.errors?.required">
+                                 First Name is required
+                              </span>
+                              <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                                 *ngIf="registerFormControl.first_name.errors?.minlength">
+                                 Minimum two characters required
+                              </span>
+                           </div>
+                           <div class="col">
+                              <label class="form-label">Last Name:</label>
+                              <input formControlName="last_name" type="text" class="form-control"
+                                 placeholder="Please Enter User Last Name Here"
+                                 [ngClass]="{ 'is-invalid': submitted && myForm['last_name'].errors || (myForm['last_name'].errors &&  (userForm.controls['last_name'].dirty || userForm.controls['last_name'].touched )),
+                                 'is-valid': !userForm.get('last_name').errors && (userForm.get('last_name').dirty || userForm.get('last_name').touched)}">
+                              <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                                 *ngIf="(registerFormControl.last_name.touched || submitted) && registerFormControl.last_name.errors?.required">
+                                 Last Name is required
+                              </span>
+                              <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                                 *ngIf="registerFormControl.last_name.errors?.minlength">
+                                 Minimum two characters required
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row mb-1">
+                        <div class="row">
+                           <div class="col">
+                              <label class="form-label">Email:</label>
+                              <input formControlName="email" type="text" class="form-control"
+                                 placeholder="Please Enter User Email Here"
+                                 [ngClass]="{ 'is-invalid': submitted && myForm['email'].errors || (myForm['email'].errors &&  (userForm.controls['email'].dirty || userForm.controls['email'].touched )),
+                                 'is-valid': !userForm.get('email').errors && (userForm.get('email').dirty || userForm.get('email').touched)}">
+                              <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                                 *ngIf="(registerFormControl.email.touched || submitted) && registerFormControl.email.errors?.required">
+                                 Email is required
+                              </span>
+                              <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                                 *ngIf="registerFormControl.email.errors?.minlength">
+                                 Minimum three characters required
+                              </span>
+                              <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                                 *ngIf="registerFormControl.email.errors?.email">
+                                 Valid e-mail required
+                              </span>
+                           </div>
+                           <div class="col">
+                              <label class="form-label">Password:</label>
+                              <input formControlName="password" type="password" class="form-control"
+                                 placeholder="Please Enter User Password Here"
+                                 [ngClass]="{ 'is-invalid': submitted && myForm['password'].errors || (myForm['password'].errors &&  (userForm.controls['password'].dirty || userForm.controls['password'].touched )),
+                                 'is-valid': !userForm.get('password').errors && (userForm.get('password').dirty || userForm.get('password').touched)}">
+                              <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                                 *ngIf="(registerFormControl.password.touched || submitted) && registerFormControl.password.errors?.required">
+                                 Password is required
+                              </span>
+                              <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                                 *ngIf="registerFormControl.password.errors?.minlength">
+                                 Minimum two characters required
+                              </span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row mb-1">
+                        <div class="row">
+                          <div class="col">
+                            <label class="form-label">Role:</label>
+                            <select formControlName="role" class="form-select" aria-label="Default select example"
+                               [ngClass]="{ 'is-invalid': submitted && myForm['role'].errors || (myForm['role'].errors &&  (userForm.controls['role'].dirty || userForm.controls['role'].touched )),
+                            'is-valid': !userForm.get('role').errors && (userForm.get('role').dirty || userForm.get('role').touched)}">
+                               <option value="" selected>Select Role</option>
+                               <option value="1">Admin</option>
+                               <option value="2">User</option>
+                            </select>
+                            <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                               *ngIf="(registerFormControl.role.touched || submitted) && registerFormControl.role.errors?.required">
+                               Role Type is required
+                            </span>
+                         </div>
+                        
+                           <div class="col">
+                              <label class="form-label">Phone:</label>
+                              <input formControlName="phone_number" type="text" class="form-control"
+                                 placeholder="Please Enter User Name Here"
+                                 [ngClass]="{ 'is-invalid': submitted && myForm['phone_number'].errors || (myForm['phone_number'].errors &&  (userForm.controls['phone_number'].dirty || userForm.controls['phone_number'].touched )),
+                                 'is-valid': !userForm.get('phone_number').errors && (userForm.get('phone_number').dirty || userForm.get('phone_number').touched)}">
+                              <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                                 *ngIf="(registerFormControl.phone_number.touched || submitted) && registerFormControl.phone_number.errors?.required">
+                                 Phone Number is required
+                              </span>
+                              <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                                 *ngIf="registerFormControl.phone_number.errors?.minlength">
+                                 Minimum two characters required
+                              </span>
+                              <!-- <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                                 *ngIf="registerFormControl.phone_number.errors?.pattern">
+                                 Minimum two characters required
+                              </span> -->
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row mb-1">
+                        <div class="row">                          
+                          <div class="col">
+                            <label class="form-label">Address:</label>
+                            <textarea rows="3" formControlName="address" type="text" class="form-control"
+                               placeholder="Please Enter Your address"
+                               [ngClass]="{ 'is-invalid': submitted && myForm['address'].errors || (myForm['address'].errors &&  (userForm.controls['address'].dirty || userForm.controls['address'].touched )),
+                               'is-valid': !userForm.get('address').errors && (userForm.get('address').dirty || userForm.get('address').touched)}"> </textarea>
+                            <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                               *ngIf="(registerFormControl.address.touched || submitted) && registerFormControl.address.errors?.required">
+                               Address is required
+                            </span>
+                            <span class="text-danger" style="font-size: 11px; font-weight:bold;"
+                               *ngIf="registerFormControl.address.errors?.minlength">
+                               Minimum two characters required
+                            </span>
+                         </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+         </div>
+         <div class="modal-footer border-top-0 d-flex  justify-content-start">
+            <button type="button" class="btn btn-default me-1" (click)="closeModel()">
+               <i class="bi bi-x-square pe-2"></i>Close</button>
+            <button type="submit" class="btn btn-primary text-white" (click)="addUser()" [disabled]="userForm.invalid">
+               <i class="bi bi-plus-square pe-2" ></i>  {{userForm?.value?.ROWID ? 'Update':'Save'}}</button>
+               <!-- <pre [innerHTML]="userForm.value | json"> </pre> -->
+         </div>
+      </div>
+   </div>
+</div>
+
+
+
+
+<!-- Delete User Model -->
+<div bsModal #deleteUserModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+   aria-hidden="true" [config]="{backdrop: 'static', keyboard: false, animated: true}">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title"><i class="bi bi-database-add pe-2"></i>Delete User</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeModel()">
+               <i class="bi bi-x-circle"></i>
+            </button>
+         </div>
+         <div class="modal-body pb-0">
+            <h6>Are you sure want to delete this Account?</h6>
+            <p>
+               <b>Account Name :</b> {{currentUser.first_name + ' ' + currentUser.last_name}} <br />
+            </p>
+         </div>
+         <div class="modal-footer border-top-0 d-flex  justify-content-start">
+            <button type="button" class="btn btn-default me-1" (click)="closeModel()">Close</button>
+            <button type="button" class="btn btn-danger text-white" (click)="deleteUser()">Delete</button>
+         </div>
+      </div>
+   </div>
+</div>

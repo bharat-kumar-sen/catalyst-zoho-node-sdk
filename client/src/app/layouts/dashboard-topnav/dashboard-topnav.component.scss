@@ -1,0 +1,226 @@
+@import "../../../scss/_variables";
+
+
+.app,
+.app-dashboard {
+   // min-height: 100;
+   min-height: 100vh;
+
+   .header-fixed {
+      position: fixed;
+      z-index: 1020;
+      width: 100%;
+   }
+}
+
+.app,
+app-dashboard-layout,
+app-root {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+.app-dashboard .main,
+.app-dashboard-body {
+   min-height: calc(100vh - 55px);
+}
+
+.app-dashboard-body {
+   padding-top: 55px;
+   background-color: #e4e5e6;
+}
+
+.dashboard-toggle {
+   border: 0;
+}
+
+.main {
+   transition: margin-left .25s, margin-right .25s, width .25s, flex .25s;
+   margin-left: 0;
+}
+
+.avatar>img,
+.img-avatar,
+.img-circle {
+   max-width: 100%;
+   height: auto;
+   border-radius: 50em;
+}
+
+.app-dashboard .dropdown-menu {
+   position: absolute !important;
+   // top: 100% !important;
+   // left: 0 !important;
+   z-index: 1000 !important;
+   float: left !important;
+   min-width: 10rem !important;
+   margin: .125rem 0 0 !important;
+   font-size: .875rem !important;
+   color: #334151 !important;
+   text-align: left !important;
+   list-style: none !important;
+   background-color: #fff !important;
+   background-clip: padding-box !important;
+   border: 1px solid #e1e6f1 !important;
+}
+
+
+.sidebar-desk {
+
+   // @media (min-width:992px) {
+   //   margin-left: 0;
+   // }
+   @media (min-width:992px) {
+      .sidebar {
+         margin-left: 0px;
+      }
+
+      @media (min-width: 992px) {
+         .main {
+            margin-left: 230px;
+         }
+      }
+   }
+}
+
+.sidebar {
+   position: fixed;
+   z-index: 1019;
+   width: 230px;
+   min-height: calc(100vh - 56px);
+   display: flex;
+   flex-direction: column;
+   padding: 0;
+   color: #fff;
+   background: #2f353a;
+   padding-top: 10px;
+   margin-left: -230px;
+   display: block !important;
+   transition: margin-left .25s, margin-right .25s, width .25s, flex .25s;
+
+   .sidebar-nav {
+      position: relative;
+      flex: 1;
+      width: 230px;
+      height: calc(100vh - 65px);
+      overflow: auto;
+
+      .nav {
+         display: block;
+         // flex-wrap: wrap;
+         padding-left: 0;
+         margin-bottom: 0;
+         list-style: none;
+         // flex-direction: column;
+         min-height: 100%;
+         padding: 0;
+         width: 100%;
+
+         li {
+            padding: 0;
+
+            .nav-link {
+               color: #fff;
+               display: block;
+               padding: .75rem 1rem;
+               color: #fff;
+               text-decoration: none;
+               background: transparent;
+               font-size: 14px;
+
+               &.active {
+                  background-color: $secondaryClr;
+               }
+
+               &:hover:not(.active) {
+                  color: $secondaryClr;
+               }
+
+               &.dropDown-div {
+                  padding-right: 40px;
+                  position: relative;
+
+                  &:after {
+                     content: '\f107';
+                     font-family: "FontAwesome";
+                     position: absolute;
+                     right: 10px;
+                     top: 0;
+                     bottom: 0;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     transition: all 0.4s ease 0s;
+                     width: 20px;
+                     height: 20px;
+                     margin: auto;
+                  }
+
+                  &.active:after {
+                     transform: rotate(180deg);
+                  }
+               }
+
+               i {
+                  margin-right: 7px;
+               }
+            }
+
+            .dropDown {
+               max-height: 0;
+               padding: 0;
+               margin: 0;
+               overflow-y: hidden;
+               width: 100%;
+               transition: max-height .3s ease-in-out;
+
+               &.open {
+                  max-height: 1500px;
+               }
+
+               li {
+                  padding-left: 10px;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+.sidebar-mob {
+   position: relative;
+
+   @media (max-width:991.5px) {
+      &::before {
+         content: '';
+         background: #0000004a;
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+      }
+
+      .sidebar {
+         margin-left: 0px;
+      }
+   }
+
+   @media (min-width:991.9px) {
+      .sidebar {
+         margin-left: 0px;
+      }
+
+      .main {
+         margin-left: 200px;
+      }
+   }
+}
+
+.custom-border span {
+   display: inline-block;
+   flex: 0 0 25%;
+   height: 5px;
+}

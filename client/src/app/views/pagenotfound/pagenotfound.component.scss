@@ -1,0 +1,99 @@
+ /*************************************
+    			Background  
+ **************************************/
+ /*images background*/
+ .bg-overlay-black-60:before {
+    background: rgba(0, 0, 0, 0.6);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+ }
+
+ /*************************************
+	    	 error 404
+**************************************/
+ .error-block {
+    position: relative;
+    z-index: 9;
+    padding: 20px 0 100px 0px;
+ }
+
+ .error-block .error-text {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    z-index: -1;
+ }
+
+ .error-block .error-text h2 {
+    font-size: 420px;
+    line-height: 300px;
+    color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0;
+    top: 0;
+ }
+
+ .error-block .error-text span {
+    display: inline-block;
+    position: absolute;
+    right: -50px;
+    top: 109px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    font-size: 134px;
+    line-height: 100px;
+    color: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+ }
+
+ .error-block h1 {
+    font-size: 87px;
+    padding-top: 110px;
+ }
+
+ .error-block p {
+    font-size: 33px;
+ }
+
+ .error-text-02 {
+    position: relative;
+    text-align: center;
+ }
+
+ .error-text-02 h2 {
+    font-size: 420px;
+    line-height: 300px;
+    color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    left: -70px;
+    top: 0;
+ }
+
+ .error-text-02 span {
+    display: inline-block;
+    position: absolute;
+    right: -50px;
+    top: 109px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    font-size: 117px;
+    line-height: 100px;
+    color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+ }
+
+ .section-transparent {
+    background: transparent;
+ }
