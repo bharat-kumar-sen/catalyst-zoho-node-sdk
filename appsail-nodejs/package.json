@@ -4,7 +4,7 @@
 	"main": "index.js",
 	"author": "bharat@amwebtech.com",
 	"scripts": {
-		"start": "node index.js"
+		"start": "nodemon index.js"
 	},
 	"dependencies": {
 		"async": "^3.2.4",

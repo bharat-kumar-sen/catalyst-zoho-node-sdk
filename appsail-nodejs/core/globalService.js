@@ -6,7 +6,7 @@ const nodemailer = require("nodemailer");
 require("dotenv").config();
 var moment = require("moment");
 var jwt = require('jsonwebtoken');
-const  {authHandler} = require('./msgHandler');
+const  {msgHandler} = require('./msgHandler');
 
 exports.prepareEmailData = (EmailConfig, callBack) => {
   async.waterfall(
@@ -152,25 +152,19 @@ exports.generateString = () => {
 
 exports.verifyToken = (req, res, next) => {
   let authorization = req.headers.authorization;
+  // let authorization = null;
   if(authorization) {
     authorization = req.headers.authorization.split(" ")[1];
     // console.log("authorization",authorization);
     jwt.verify(authorization, process.env.JWT_SECRETKEY,  (err, payload)=> {
       if (payload) {
-        // return res.json(new Response(401,'F').custom(authHandler('AUTH_FAILED')));
         return next();
       } else {
-        return res.json({
-          status: 401,
-          message: authHandler('TOKEN_INVALID')
-        });
+        res.status(401).json({message: msgHandler('TOKEN_EXPIRED')});
       }
     })
   } else {
-    return res.json({
-      status: 401,
-      message: authHandler('TOKEN_REQUIRED')
-    });
+    res.status(401).json({message: msgHandler('TOKEN_REQUIRED')});
   }
 };
 
