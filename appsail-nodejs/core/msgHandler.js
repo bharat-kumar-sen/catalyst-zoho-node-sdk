@@ -1,4 +1,4 @@
-exports.authHandler = (msgType) => {
+exports.msgHandler = (msgType) => {
   const msgs = {
     TOKEN_REQUIRED: 'Authentication token is required.',
     TOKEN_INVALID: 'Invalid authentication token passed.',
