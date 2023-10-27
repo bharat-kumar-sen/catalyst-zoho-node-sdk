@@ -216,24 +216,26 @@ export class UsersComponent {
     };
     // HERE WE CAN CALL API FOR SAVING DATA
     this.usersService.saveUserInfo(postData).subscribe(
-      (dataRes: any) => {
-        if (dataRes.status === 200) {
-          dataRes = dataRes.data;
-          this.globalService.sendActionChildToParent('stop');
-          this.toastr.success(
-            'User status has been changed successfully.',
-            'Success!'
-          );
-          let index = this.userList.findIndex((x) => x._id === dataRes._id);
-          if (index) {
-            this.userList[index].status = dataRes.status;
-            this.reInitDataTable();
+      {
+        next:(dataRes: any) => {
+          if (dataRes.status === 200) {
+            dataRes = dataRes.data;
+            this.globalService.sendActionChildToParent('stop');
+            this.toastr.success(
+              'User status has been changed successfully.',
+              'Success!'
+            );
+            let index = this.userList.findIndex((x) => x._id === dataRes._id);
+            if (index) {
+              this.userList[index].status = dataRes.status;
+              this.reInitDataTable();
+            }
           }
+        },
+        error: (error: any) => {
+          this.globalService.sendActionChildToParent('stop');
+          this.toastr.error(error.message, 'Error!');
         }
-      },
-      (error: any) => {
-        this.globalService.sendActionChildToParent('stop');
-        this.toastr.error(error.message, 'Error!');
       }
     );
   }

@@ -22,18 +22,18 @@ exports.saveUserInfo = async (req, res) => {
      rowPromise = Usertbl.insertRow(postData);
   }
   rowPromise.then((row) => {
-    return res.json({
+    return res.status(200).json({
       message: "User Details saved successfully.",
-      status: 200,
+      status:200,
       data: row,
     })
 		// res.redirect(req.get('referer')); //Reloads the page again after a successful insert
 	}).catch(err => {
-    return res.json({
-      status: 500,
+    return res.status(500).json({
       message: "There are some error while save user.",
+      status: 500,
       data: err,
-    });
+    })
 	});
 };
 
