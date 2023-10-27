@@ -27,7 +27,6 @@ export class DashboardLayoutComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.currentUser = this.jwtService.getCurrentUser();
-    console.log("this.currentUser====0000======", this.currentUser);
   }
   constructor(
     private router: Router,
