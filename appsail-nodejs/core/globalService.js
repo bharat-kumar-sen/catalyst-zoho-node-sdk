@@ -6,10 +6,7 @@ const nodemailer = require("nodemailer");
 require("dotenv").config();
 var moment = require("moment");
 var jwt = require('jsonwebtoken');
-
-exports.authenticationFalsePage = () => {
-  return ['emailAlreadyExists', 'doSignIn', 'logout', 'searchUserData', 'forgotPassword', 'getUserInfo', 'saveUserInfo', 'profileUpdate']
-};
+const  {authHandler} = require('./msgHandler');
 
 exports.prepareEmailData = (EmailConfig, callBack) => {
   async.waterfall(
@@ -153,19 +150,28 @@ exports.generateString = () => {
   return result;
 };
 
-exports.verifyToken = (authorization, callBack) => {
-  // console.log("authorization===========", authorization)
-  jwt.verify(authorization, process.env.JWT_SECRETKEY, function (err, payload) {
-    if (payload) {
-      callBack({
-        verify: true
-      })
-    } else {
-      callBack({
-        verify: false
-      })
-    }
-  })
+exports.verifyToken = (req, res, next) => {
+  let authorization = req.headers.authorization;
+  if(authorization) {
+    authorization = req.headers.authorization.split(" ")[1];
+    // console.log("authorization",authorization);
+    jwt.verify(authorization, process.env.JWT_SECRETKEY,  (err, payload)=> {
+      if (payload) {
+        // return res.json(new Response(401,'F').custom(authHandler('AUTH_FAILED')));
+        return next();
+      } else {
+        return res.json({
+          status: 401,
+          message: authHandler('TOKEN_INVALID')
+        });
+      }
+    })
+  } else {
+    return res.json({
+      status: 401,
+      message: authHandler('TOKEN_REQUIRED')
+    });
+  }
 };
 
 exports.capitalize = (s) => {
@@ -207,3 +213,4 @@ exports.linkExpiryError = () => {
     data: "Forgot Password Link has been expired. Please check link or again you can request for forgot password!.",
   };
 };
+

@@ -1,118 +1,44 @@
-[debug] [2023-10-26T12:11:59.414Z] : 
-[debug] [2023-10-26T12:11:59.415Z] : ----------------------------------------------------------------------
-[debug] [2023-10-26T12:11:59.416Z] : Command:      /usr/bin/node /usr/bin/catalyst deploy
-[debug] [2023-10-26T12:11:59.416Z] : CLI Version:  1.16.1
-[debug] [2023-10-26T12:11:59.417Z] : Platform:     linux
-[debug] [2023-10-26T12:11:59.417Z] : Node Version: v16.20.2
-[debug] [2023-10-26T12:11:59.418Z] : Time:         Thu Oct 26 2023 17:41:59 GMT+0530 (India Standard Time)
-[debug] [2023-10-26T12:11:59.419Z] : ----------------------------------------------------------------------
-[debug] [2023-10-26T12:11:59.419Z] : 
-[debug] [2023-10-26T12:12:00.018Z] : > authorizing via signed-in user option
-[debug] [2023-10-26T12:12:00.019Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
-[debug] [2023-10-26T12:12:00.040Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/5261000000007197 
+[debug] [2023-10-27T06:11:31.677Z] : 
+[debug] [2023-10-27T06:11:31.678Z] : ----------------------------------------------------------------------
+[debug] [2023-10-27T06:11:31.679Z] : Command:      /usr/bin/node /usr/bin/catalyst serve
+[debug] [2023-10-27T06:11:31.679Z] : CLI Version:  1.16.1
+[debug] [2023-10-27T06:11:31.680Z] : Platform:     linux
+[debug] [2023-10-27T06:11:31.680Z] : Node Version: v16.20.2
+[debug] [2023-10-27T06:11:31.681Z] : Time:         Fri Oct 27 2023 11:41:31 GMT+0530 (India Standard Time)
+[debug] [2023-10-27T06:11:31.681Z] : ----------------------------------------------------------------------
+[debug] [2023-10-27T06:11:31.682Z] : 
+[debug] [2023-10-27T06:11:32.320Z] : > authorizing via signed-in user option
+[debug] [2023-10-27T06:11:32.321Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute"]
+[debug] [2023-10-27T06:11:32.338Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/5261000000007197 
 
-[debug] [2023-10-26T12:12:00.588Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:12:00 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=098f9c24-bca1-4664-ac53-39d3bdadc400;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=098f9c24-bca1-4664-ac53-39d3bdadc400;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+[debug] [2023-10-27T06:11:32.707Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:11:32 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=48b1edda-ffbb-4ae2-8c70-9516024aa7e2;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=48b1edda-ffbb-4ae2-8c70-9516024aa7e2;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
 
-[debug] [2023-10-26T12:12:00.597Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/5261000000007197/environment 
+[debug] [2023-10-27T06:11:32.718Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/5261000000007197/environment 
 
-[debug] [2023-10-26T12:12:00.753Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:12:00 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=ab8c11db-6332-4e69-a9f3-ef8b4e41d192;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ab8c11db-6332-4e69-a9f3-ef8b4e41d192;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+[debug] [2023-10-27T06:11:32.871Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:11:32 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=fb11f2a1-09d3-4db2-a007-bc73c543fe72;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fb11f2a1-09d3-4db2-a007-bc73c543fe72;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
 
-[info] [2023-10-26T12:12:01.044Z] : ℹ Plugin : "zcatalyst-cli-plugin-angular" is used for client deploy
-[info] [2023-10-26T12:12:01.044Z] : ℹ Building Application...
-[info] [2023-10-26T12:12:02.462Z] : [Angular-plugin]: Option "deployUrl" is deprecated: Use "baseHref" option, "APP_BASE_HREF" DI token or a combination of both instead. For more information, see https://angular.io/guide/deployment#the-deploy-url.
-[info] [2023-10-26T12:12:32.792Z] : [Angular-plugin]: 3 rules skipped due to selector errors:
-[Angular-plugin]:   .form-floating>~label -> Did not expect successive traversals.
-[Angular-plugin]:   .form-floating>~label -> Did not expect successive traversals.
-[Angular-plugin]:   .table>>>* -> Did not expect successive traversals.
-[info] [2023-10-26T12:12:32.801Z] : [Angular-plugin]: 
-[Angular-plugin]: Initial Chunk Files           | Names                                            |  Raw Size | Estimated Transfer Size
-[Angular-plugin]: styles.c0b8eea4c08d5133.css   | styles                                           | 649.97 kB |                61.11 kB
-[Angular-plugin]: main.514927b381327de6.js      | main                                             | 521.67 kB |               140.23 kB
-[Angular-plugin]: scripts.3d37422cee1781e0.js   | scripts                                          | 491.18 kB |               145.61 kB
-[Angular-plugin]: polyfills.1227f3ae781759e0.js | polyfills                                        |  33.03 kB |                10.66 kB
-[Angular-plugin]: runtime.f6f273df6d30d5c9.js   | runtime                                          |   2.79 kB |                 1.33 kB
-[Angular-plugin]: 
-[Angular-plugin]:                               | Initial Total                                    |   1.66 MB |               358.93 kB
-[Angular-plugin]: 
-[Angular-plugin]: Lazy Chunk Files              | Names                                            |  Raw Size | Estimated Transfer Size
-[Angular-plugin]: 380.f32aa74722b21c7e.js       | views-dashboard-pages-users-users-module         |  24.94 kB |                 6.07 kB
-[Angular-plugin]: 421.9a87d59ebce2b024.js       | layouts-dashboard-layout-dashboard-layout-module |  17.16 kB |                 4.38 kB
-[Angular-plugin]: 435.f8673553f1f9d091.js       | views-home-pages-login-login-module              |  12
-[info] [2023-10-26T12:12:32.802Z] : [Angular-plugin]: .66 kB |                 3.98 kB
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:12:32.798Z - Hash: 7357de003bc5e92d - Time: 29217ms
-[info] [2023-10-26T12:12:32.804Z] : [Angular-plugin]: 
-[Angular-plugin]: Warning: /home/admin1/projects/catalyst-mean-app/client/src/app/shared-ui/filters-pipes/orderby.pipe.ts depends on 'lodash'. CommonJS or AMD dependencies can cause optimization bailouts.
-[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
-[Angular-plugin]: 
-[Angular-plugin]: Warning: /home/admin1/projects/catalyst-mean-app/client/src/app/shared-ui/services/jwt.service.ts depends on 'crypto-js'. CommonJS or AMD dependencies can cause optimization bailouts.
-[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
-[Angular-plugin]: 
-[Angular-plugin]: 
-[debug] [2023-10-26T12:12:38.002Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/5261000000007197/webapp 
-
-[debug] [2023-10-26T12:12:46.622Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:12:46 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=4e4bd1a2-70dc-424e-a9ae-394f67193776;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4e4bd1a2-70dc-424e-a9ae-394f67193776;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
-
-[info] [2023-10-26T12:12:46.635Z] : 
-[info] [2023-10-26T12:12:46.635Z] : Executing predeploy script in /home/admin1/projects/catalyst-mean-app/appsail-nodejs
-[debug] [2023-10-26T12:12:46.635Z] : Executing command > npm install
-[info] [2023-10-26T12:12:46.635Z] : > npm install
-[error] [2023-10-26T12:12:50.695Z] : uncaughtException: ENXIO: no such device or address, open '/home/admin1/projects/catalyst-mean-app/appsail-nodejs/port'
-Error: ENXIO: no such device or address, open '/home/admin1/projects/catalyst-mean-app/appsail-nodejs/port'
-[error] [2023-10-26T12:12:50.702Z] : ✖ An unexpected error has occurred.
-[debug] [2023-10-26T12:12:50.703Z] : Error Stack: CatalystError: An unexpected error has occurred.
-    at exports.default (/usr/lib/node_modules/zcatalyst-cli/lib/errorOut.js:19:17)
-    at process.<anonymous> (/usr/lib/node_modules/zcatalyst-cli/lib/bin/catalyst.js:87:28)
-    at process.emit (node:events:525:35)
-    at processEmit [as emit] (/usr/lib/node_modules/zcatalyst-cli/node_modules/signal-exit/index.js:199:34)
-    at process._fatalException (node:internal/process/execution:149:25)
-[debug] [2023-10-26T12:12:50.703Z] : Original Error: Error: ENXIO: no such device or address, open '/home/admin1/projects/catalyst-mean-app/appsail-nodejs/port'
-[debug] [2023-10-26T12:12:50.703Z] : Error Status: 500
-[info] [2023-10-26T12:12:50.703Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
-[debug] [2023-10-26T12:19:53.179Z] : 
-[debug] [2023-10-26T12:19:53.181Z] : ----------------------------------------------------------------------
-[debug] [2023-10-26T12:19:53.181Z] : Command:      /usr/bin/node /usr/bin/catalyst serve
-[debug] [2023-10-26T12:19:53.182Z] : CLI Version:  1.16.1
-[debug] [2023-10-26T12:19:53.182Z] : Platform:     linux
-[debug] [2023-10-26T12:19:53.183Z] : Node Version: v16.20.2
-[debug] [2023-10-26T12:19:53.184Z] : Time:         Thu Oct 26 2023 17:49:53 GMT+0530 (India Standard Time)
-[debug] [2023-10-26T12:19:53.184Z] : ----------------------------------------------------------------------
-[debug] [2023-10-26T12:19:53.184Z] : 
-[debug] [2023-10-26T12:19:53.792Z] : > authorizing via signed-in user option
-[debug] [2023-10-26T12:19:53.792Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute"]
-[debug] [2023-10-26T12:19:53.816Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/5261000000007197 
-
-[debug] [2023-10-26T12:19:54.093Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:19:54 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=1ebe7856-7a4e-4978-92d6-c2f6b86c7671;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1ebe7856-7a4e-4978-92d6-c2f6b86c7671;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
-
-[debug] [2023-10-26T12:19:54.101Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/5261000000007197/environment 
-
-[debug] [2023-10-26T12:19:54.222Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:19:54 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=e084a3e0-33f8-41e2-a652-574d19e4b864;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e084a3e0-33f8-41e2-a652-574d19e4b864;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
-
-[debug] [2023-10-26T12:19:54.491Z] : http port : '3000' is not available. Hence port '3001' will be used instead.
-[debug] [2023-10-26T12:19:54.734Z] : No basic functions to add
-[info] [2023-10-26T12:19:54.737Z] : 
-[info] [2023-10-26T12:19:54.738Z] : ℹ Client[angular-app]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
-[info] [2023-10-26T12:19:54.738Z] : 
-[info] [2023-10-26T12:19:55.051Z] : 
-[info] [2023-10-26T12:19:55.052Z] : Executing AppSail [PRESERVE] [AppSail] script in /home/admin1/projects/catalyst-mean-app/appsail-nodejs
-[debug] [2023-10-26T12:19:55.052Z] : Executing command > npm install
-[info] [2023-10-26T12:19:55.052Z] : > npm install
-[info] [2023-10-26T12:19:58.320Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
+[debug] [2023-10-27T06:11:33.222Z] : http port : '3000' is not available. Hence port '3001' will be used instead.
+[debug] [2023-10-27T06:11:33.508Z] : No basic functions to add
+[info] [2023-10-27T06:11:33.510Z] : 
+[info] [2023-10-27T06:11:33.511Z] : ℹ Client[angular-app]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
+[info] [2023-10-27T06:11:33.511Z] : 
+[info] [2023-10-27T06:11:33.858Z] : 
+[info] [2023-10-27T06:11:33.858Z] : Executing AppSail [PRESERVE] [AppSail] script in /home/admin1/projects/catalyst-mean-app/appsail-nodejs
+[debug] [2023-10-27T06:11:33.859Z] : Executing command > npm install
+[info] [2023-10-27T06:11:33.859Z] : > npm install
+[info] [2023-10-27T06:11:36.853Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
 [Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
-[info] [2023-10-26T12:19:59.167Z] : 
-[info] [2023-10-26T12:19:59.167Z] :  >>>>>>>>>>>>>> AppSail <<<<<<<<<<<<<< 
-[info] [2023-10-26T12:19:59.168Z] : ℹ AppSail: http://localhost:3001
-[info] [2023-10-26T12:19:59.168Z] : 
-[info] [2023-10-26T12:19:59.169Z] : 
-[info] [2023-10-26T12:19:59.169Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
-[info] [2023-10-26T12:19:59.169Z] : ℹ client[angular-app]: http://localhost:3000/app/
-[info] [2023-10-26T12:19:59.169Z] : 
-[info] [2023-10-26T12:20:39.785Z] : [Angular-plugin]: 
+[info] [2023-10-27T06:11:37.398Z] : 
+[info] [2023-10-27T06:11:37.398Z] :  >>>>>>>>>>>>>> AppSail <<<<<<<<<<<<<< 
+[info] [2023-10-27T06:11:37.399Z] : ℹ AppSail: http://localhost:3001
+[info] [2023-10-27T06:11:37.400Z] : 
+[info] [2023-10-27T06:11:37.400Z] : 
+[info] [2023-10-27T06:11:37.400Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
+[info] [2023-10-27T06:11:37.401Z] : ℹ client[angular-app]: http://localhost:3000/app/
+[info] [2023-10-27T06:11:37.401Z] : 
+[info] [2023-10-27T06:12:18.245Z] : [Angular-plugin]: 
 [Angular-plugin]: Initial Chunk Files                                            | Names                                            |  Raw Size
 [Angular-plugin]: vendor.js                                                      | vendor                                           |   4.04 MB | 
 [Angular-plugin]: styles.css, styles.js                                          | styles                                           |   1.10 MB | 
@@ -126,11 +52,11 @@ Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:19:54 GMT","conten
 [Angular-plugin]: Lazy Chunk Files                                               | Names                                            |  Raw Size
 [Angular-plugin]: src_app_views_dashboard-pages_users_users_module_ts.js         | views-dashboard-pages-users-users-module         |  76.89 kB | 
 [Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js              | views-home-pages-login-login-module              |  59
-[info] [2023-10-26T12:20:39.786Z] : [Angular-plugin]: .40 kB | 
-[Angular-plugin]: src_app_layouts_dashboard-layout_dashboard-layout_module_ts.js | layouts-dashboard-layout-dashboard-layout-module |  52.73 kB | 
+[info] [2023-10-27T06:12:18.245Z] : [Angular-plugin]: .76 kB | 
+[Angular-plugin]: src_app_layouts_dashboard-layout_dashboard-layout_module_ts.js | layouts-dashboard-layout-dashboard-layout-module |  52.74 kB | 
 [Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:20:39.649Z - Hash: bb93aba6d034b819 - Time: 39691ms
-[info] [2023-10-26T12:20:39.788Z] : [Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:12:18.174Z - Hash: 70501b8059869bb6 - Time: 38948ms
+[info] [2023-10-27T06:12:18.246Z] : [Angular-plugin]: 
 [Angular-plugin]: Warning: /home/admin1/projects/catalyst-mean-app/client/src/app/shared-ui/filters-pipes/orderby.pipe.ts depends on 'lodash'. CommonJS or AMD dependencies can cause optimization bailouts.
 [Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
 [Angular-plugin]: 
@@ -138,243 +64,359 @@ Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:19:54 GMT","conten
 [Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
 [Angular-plugin]: 
 [Angular-plugin]: 
-[info] [2023-10-26T12:20:39.798Z] : [Angular-plugin]: 
+[info] [2023-10-27T06:12:18.247Z] : [Angular-plugin]: 
 [Angular-plugin]: ** Angular Live Development Server is listening on 127.0.0.1:3050, open your browser on http://127.0.0.1:3050/app **
 [Angular-plugin]: 
-[info] [2023-10-26T12:20:39.840Z] : [Angular-plugin]: 
+[info] [2023-10-27T06:12:18.248Z] : [Angular-plugin]: 
 [Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:20:40.411Z] : [Angular-plugin]: Please visit this url to access angular-app: http://localhost:3000/app/
-[info] [2023-10-26T12:21:00.639Z] : [Angular-plugin]: 
+[info] [2023-10-27T06:12:18.558Z] : [Angular-plugin]: Please visit this url to access angular-app: http://localhost:3000/app/
+[info] [2023-10-27T06:12:20.437Z] : [Angular-plugin]: 
 [Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
-[Angular-plugin]: runtime.js, runtime.bb93aba6d034b819.hot-update.js | runtime | 51.76 kB | 
+[Angular-plugin]: runtime.js, runtime.70501b8059869bb6.hot-update.js | runtime | 51.76 kB | 
 [Angular-plugin]: 
 [Angular-plugin]: 8 unchanged chunks
 [Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:21:00.604Z - Hash: 90cf680ec93ddd94 - Time: 1455ms
-[info] [2023-10-26T12:21:00.641Z] : [Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:12:20.338Z - Hash: 94c29093c23f4602 - Time: 1588ms
+[info] [2023-10-27T06:12:20.439Z] : [Angular-plugin]: 
 [Angular-plugin]: ✔ Compiled successfully.
-[debug] [2023-10-26T12:21:10.464Z] : proxy closed
-[debug] [2023-10-26T12:21:12.564Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
+[debug] [2023-10-27T06:12:22.538Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
 
-[debug] [2023-10-26T12:21:12.841Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:21:12 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=66cfe059-88ca-4b1d-b50a-2b9432800ec6;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=66cfe059-88ca-4b1d-b50a-2b9432800ec6;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=A645148C2B2120F683A525A81458F1BC; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
+[debug] [2023-10-27T06:12:22.868Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:12:22 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=3b5fc896-a473-4442-88c5-818eda576f8b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3b5fc896-a473-4442-88c5-818eda576f8b;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=EADCCE18F93FC73BC69DFF4F5B807FAC; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
 
-[debug] [2023-10-26T12:21:12.845Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+[debug] [2023-10-27T06:12:22.871Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
 
-[debug] [2023-10-26T12:21:18.283Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
+[debug] [2023-10-27T06:12:26.111Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
 
-[debug] [2023-10-26T12:21:18.478Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:21:18 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=338aaddb-68dd-49d9-8c73-2adef415aa65;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=338aaddb-68dd-49d9-8c73-2adef415aa65;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=49FA0EC515A45452398ABF0D2E3829CC; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
+[debug] [2023-10-27T06:12:26.424Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:12:26 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=9b3d1ba9-f004-4ff6-b326-2c09caef8b81;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=9b3d1ba9-f004-4ff6-b326-2c09caef8b81;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=B2DBBB573A38EB515F4B71868A532F68; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
 
-[debug] [2023-10-26T12:21:18.480Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+[debug] [2023-10-27T06:12:26.426Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
 
-[debug] [2023-10-26T12:21:24.839Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:21:24.981Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:21:24 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=09fce4a0-b12d-4eef-8566-05795ce9228a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=09fce4a0-b12d-4eef-8566-05795ce9228a;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=6F4C5BB2C3788284742BCAC0F2997BC7; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:21:24.982Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
-
-[debug] [2023-10-26T12:21:27.511Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:21:27.618Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:21:27 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=91f47ccc-601c-456b-afdd-f623e37c35af;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=91f47ccc-601c-456b-afdd-f623e37c35af;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=6CC49D23AAD0112A32A1441919AC99C7; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:21:27.620Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
-
-[debug] [2023-10-26T12:21:27.890Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:21:28.067Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:21:28 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=fc0eecce-158f-47e7-b070-f9162e5b7215;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fc0eecce-158f-47e7-b070-f9162e5b7215;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=3D00E34410B9E512EC0E994FB65FD021; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:21:28.070Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:21:29.964Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:21:30.127Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:21:30 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=9519f431-5b44-44c0-8237-2039ce44a381;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=9519f431-5b44-44c0-8237-2039ce44a381;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=9B8F769A37593EFB1301983284921644; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:21:30.128Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
-
-[debug] [2023-10-26T12:21:32.483Z] : proxy closed
-[debug] [2023-10-26T12:21:35.529Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:21:35.678Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:21:35 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=b75059a0-5bf9-4ff5-91ad-48ebc5202f1b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b75059a0-5bf9-4ff5-91ad-48ebc5202f1b;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=2E8883F07607EE3A0EC899BFCBE49BDC; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:21:35.680Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
-
-[debug] [2023-10-26T12:21:36.029Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:21:38.585Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:21:36 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=9d986b5b-93f2-4a04-9ff4-2cf67a0c7fe9;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=9d986b5b-93f2-4a04-9ff4-2cf67a0c7fe9;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=976AED30E71FE3E9EA5AC4422CD4EF1A; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:21:38.587Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[info] [2023-10-26T12:21:48.134Z] : [Angular-plugin]: 
-[Angular-plugin]: 9 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:21:48.002Z - Hash: 90cf680ec93ddd94 - Time: 1005ms
-[info] [2023-10-26T12:21:48.135Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:21:49.164Z] : [Angular-plugin]: 
-[Angular-plugin]: 9 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:21:49.124Z - Hash: 90cf680ec93ddd94 - Time: 829ms
-[info] [2023-10-26T12:21:49.166Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:22:03.362Z] : [Angular-plugin]: 
+[info] [2023-10-27T06:12:46.346Z] : [Angular-plugin]: 
 [Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
-[Angular-plugin]: runtime.js, runtime.90cf680ec93ddd94.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: runtime.js, runtime.94c29093c23f4602.hot-update.js                                                                               | runtime                             | 51.76 kB | 
 [Angular-plugin]: 
 [Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
-[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.90cf680ec93ddd94.hot-update.js | views-home-pages-login-login-module | 70.22 kB | 
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.94c29093c23f4602.hot-update.js | views-home-pages-login-login-module | 70.47 kB | 
 [Angular-plugin]: 
 [Angular-plugin]: 7 unchanged chunks
 [Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:22:03.328Z - Hash: 93db1b87637b9008 - Time: 3035ms
-[info] [2023-10-26T12:22:03.363Z] : [Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:12:46.304Z - Hash: 00a4505f7c057102 - Time: 2853ms
+[info] [2023-10-27T06:12:46.347Z] : [Angular-plugin]: 
 [Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:22:04.712Z] : [Angular-plugin]: 
+[debug] [2023-10-27T06:12:51.060Z] : proxy closed
+[info] [2023-10-27T06:13:16.233Z] : [Angular-plugin]: 
 [Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
-[Angular-plugin]: runtime.js, runtime.93db1b87637b9008.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: runtime.js, runtime.00a4505f7c057102.hot-update.js                                                                               | runtime                             | 51.76 kB | 
 [Angular-plugin]: 
 [Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
-[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.93db1b87637b9008.hot-update.js | views-home-pages-login-login-module | 60.23 kB | 
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.00a4505f7c057102.hot-update.js | views-home-pages-login-login-module | 71.18 kB | 
 [Angular-plugin]: 
 [Angular-plugin]: 7 unchanged chunks
 [Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:22:04.613Z - Hash: eeda11e35744cd15 - Time: 1114ms
-[info] [2023-10-26T12:22:04.713Z] : [Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:13:16.178Z - Hash: 1a9ae8c960327ea8 - Time: 1521ms
+[info] [2023-10-27T06:13:16.234Z] : [Angular-plugin]: 
 [Angular-plugin]: ✔ Compiled successfully.
-[debug] [2023-10-26T12:22:04.974Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
+[info] [2023-10-27T06:13:31.629Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.1a9ae8c960327ea8.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.1a9ae8c960327ea8.hot-update.js | views-home-pages-login-login-module | 71.21 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:13:31.513Z - Hash: dbf36832fa86240d - Time: 1168ms
+[info] [2023-10-27T06:13:31.631Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2023-10-27T06:13:42.542Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.dbf36832fa86240d.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.dbf36832fa86240d.hot-update.js | views-home-pages-login-login-module | 71.21 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:13:42.520Z - Hash: 73569c81ce8aed98 - Time: 1142ms
+[info] [2023-10-27T06:13:42.543Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2023-10-27T06:13:59.494Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.73569c81ce8aed98.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.73569c81ce8aed98.hot-update.js | views-home-pages-login-login-module | 71.22 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:13:59.411Z - Hash: 88ee35d68c7a54d1 - Time: 1310ms
+[info] [2023-10-27T06:13:59.496Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2023-10-27T06:14:04.697Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.88ee35d68c7a54d1.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.88ee35d68c7a54d1.hot-update.js | views-home-pages-login-login-module | 71.22 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:14:04.664Z - Hash: 9c34976c4258d397 - Time: 1160ms
+[info] [2023-10-27T06:14:04.699Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2023-10-27T06:14:16.982Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.9c34976c4258d397.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.9c34976c4258d397.hot-update.js | views-home-pages-login-login-module | 71.22 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:14:16.932Z - Hash: 10186e7fca03cb66 - Time: 1606ms
+[info] [2023-10-27T06:14:16.984Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2023-10-27T06:14:30.548Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.10186e7fca03cb66.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.10186e7fca03cb66.hot-update.js | views-home-pages-login-login-module | 71.22 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:14:30.470Z - Hash: fc1958860b2f4810 - Time: 1338ms
+[info] [2023-10-27T06:14:30.550Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2023-10-27T06:14:38.888Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.fc1958860b2f4810.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.fc1958860b2f4810.hot-update.js | views-home-pages-login-login-module | 71.22 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:14:38.852Z - Hash: 2e4e325f5b55dad4 - Time: 1063ms
+[info] [2023-10-27T06:14:38.889Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2023-10-27T06:14:55.559Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.2e4e325f5b55dad4.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.2e4e325f5b55dad4.hot-update.js | views-home-pages-login-login-module | 71.22 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:14:55.511Z - Hash: c65188b495d5c740 - Time: 1264ms
+[info] [2023-10-27T06:14:55.561Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[debug] [2023-10-27T06:15:00.326Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
 
-[debug] [2023-10-26T12:22:05.575Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:22:05 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=899532d3-3c45-4818-981b-fe415247db12;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=899532d3-3c45-4818-981b-fe415247db12;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=F8E5C5C341E27628E3D383A424C9893D; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
+[debug] [2023-10-27T06:15:00.678Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:15:00 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=3f2ae739-ade1-49d5-a34f-be80c32e136f;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3f2ae739-ade1-49d5-a34f-be80c32e136f;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=601B855AB699CFE51984F779AB46D4D1; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
 
-[debug] [2023-10-26T12:22:05.579Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+[debug] [2023-10-27T06:15:00.681Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
 
-[info] [2023-10-26T12:22:06.529Z] : [Angular-plugin]: 
+[debug] [2023-10-27T06:15:01.251Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
+
+[debug] [2023-10-27T06:15:02.367Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:15:02 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=fc8780fe-cc24-4f07-b964-d7c180a3f1c3;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=fc8780fe-cc24-4f07-b964-d7c180a3f1c3;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=6E6961235559B90ED78611B6DF3CF66E; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
+
+[debug] [2023-10-27T06:15:02.369Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+
+[debug] [2023-10-27T06:15:07.005Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
+
+[debug] [2023-10-27T06:15:07.525Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:15:07 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=a6fcb47b-5d08-4fce-b695-0e386108214d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a6fcb47b-5d08-4fce-b695-0e386108214d;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=FEBEDB17733963CD745B99BE8652075B; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
+
+[debug] [2023-10-27T06:15:07.527Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
+
+[info] [2023-10-27T06:15:19.084Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.c65188b495d5c740.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.c65188b495d5c740.hot-update.js | views-home-pages-login-login-module | 71.24 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:15:18.970Z - Hash: b9af2c1adc0a9764 - Time: 1530ms
+[info] [2023-10-27T06:15:19.086Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2023-10-27T06:15:31.857Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.b9af2c1adc0a9764.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.b9af2c1adc0a9764.hot-update.js | views-home-pages-login-login-module | 71.24 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:15:31.837Z - Hash: 05ae9f9f4b928797 - Time: 1108ms
+[info] [2023-10-27T06:15:31.858Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2023-10-27T06:15:42.715Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.05ae9f9f4b928797.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.05ae9f9f4b928797.hot-update.js | views-home-pages-login-login-module | 71.24 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:15:42.658Z - Hash: 738c0cd07cf338ca - Time: 1010ms
+[info] [2023-10-27T06:15:42.717Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2023-10-27T06:15:50.297Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.738c0cd07cf338ca.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.738c0cd07cf338ca.hot-update.js | views-home-pages-login-login-module | 71.24 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:15:50.282Z - Hash: 55ce48f77e26359c - Time: 1039ms
+[info] [2023-10-27T06:15:50.298Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2023-10-27T06:16:03.738Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.55ce48f77e26359c.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.55ce48f77e26359c.hot-update.js | views-home-pages-login-login-module | 71.23 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:16:03.637Z - Hash: 117a38c63a778043 - Time: 1507ms
+[info] [2023-10-27T06:16:03.740Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2023-10-27T06:16:23.164Z] : [Angular-plugin]: 
 [Angular-plugin]: 9 unchanged chunks
 [Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:22:06.502Z - Hash: eeda11e35744cd15 - Time: 679ms
-[info] [2023-10-26T12:22:06.531Z] : [Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:16:23.120Z - Hash: 117a38c63a778043 - Time: 666ms
+[info] [2023-10-27T06:16:23.165Z] : [Angular-plugin]: 
 [Angular-plugin]: ✔ Compiled successfully.
-[debug] [2023-10-26T12:22:10.764Z] : proxy closed
-[debug] [2023-10-26T12:22:11.559Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
+[info] [2023-10-27T06:16:44.469Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.117a38c63a778043.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.117a38c63a778043.hot-update.js | views-home-pages-login-login-module | 71.22 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:16:44.425Z - Hash: f7bba0e00f284873 - Time: 1168ms
+[info] [2023-10-27T06:16:44.470Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[debug] [2023-10-27T06:16:47.709Z] : proxy closed
+[info] [2023-10-27T06:17:07.229Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.f7bba0e00f284873.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.f7bba0e00f284873.hot-update.js | views-home-pages-login-login-module | 71.22 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:17:07.133Z - Hash: f730f8914ba08392 - Time: 1378ms
+[info] [2023-10-27T06:17:07.232Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[info] [2023-10-27T06:17:14.455Z] : [Angular-plugin]: 
+[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
+[Angular-plugin]: runtime.js, runtime.f730f8914ba08392.hot-update.js                                                                               | runtime                             | 51.76 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
+[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.f730f8914ba08392.hot-update.js | views-home-pages-login-login-module | 71.22 kB | 
+[Angular-plugin]: 
+[Angular-plugin]: 7 unchanged chunks
+[Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:17:14.410Z - Hash: 119904447e2126c6 - Time: 884ms
+[info] [2023-10-27T06:17:14.462Z] : [Angular-plugin]: 
+[Angular-plugin]: ✔ Compiled successfully.
+[debug] [2023-10-27T06:17:26.616Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
 
-[debug] [2023-10-26T12:22:11.676Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:22:11 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=a0517d79-c516-490d-9bdf-22df98348049;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a0517d79-c516-490d-9bdf-22df98348049;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=14C737C5DC7BEBF03651BC4F7A6B2C9D; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
+[debug] [2023-10-27T06:17:27.035Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:17:27 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=8a936de3-e62c-4a5c-8a23-9020bf620b98;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8a936de3-e62c-4a5c-8a23-9020bf620b98;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=5377986F6AF8CCB205256F634A828B9D; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
 
-[debug] [2023-10-26T12:22:11.677Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
+[debug] [2023-10-27T06:17:27.040Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
 
-[debug] [2023-10-26T12:22:12.730Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
+[debug] [2023-10-27T06:17:27.592Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
 
-[debug] [2023-10-26T12:22:12.839Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:22:12 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=282f1217-c02e-494d-b617-9e96a1526c68;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=282f1217-c02e-494d-b617-9e96a1526c68;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=4A24DD8B24408E11B322FFAFFA1E20E3; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
+[debug] [2023-10-27T06:17:27.875Z] : <<<< HTTP RESPONSE : 401
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:17:27 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=40469fcd-9e02-4157-a037-66fc9a8d08f4;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=40469fcd-9e02-4157-a037-66fc9a8d08f4;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=0E0CC47106287A9DDA86238FC752D084; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
 
-[debug] [2023-10-26T12:22:12.840Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
+[debug] [2023-10-27T06:17:27.877Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
 
-[debug] [2023-10-26T12:22:15.086Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:22:25.247Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:22:25 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=f24a2471-a638-4ff4-ad87-6b7be5c0674b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f24a2471-a638-4ff4-ad87-6b7be5c0674b;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=34B64B5439E8ECC68192E6347AF39A20; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:22:25.248Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
-
-[debug] [2023-10-26T12:22:25.474Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:22:25.688Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:22:25 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=bacee8d0-ae8f-4d12-a994-03cb7f5e2d56;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=bacee8d0-ae8f-4d12-a994-03cb7f5e2d56;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=F1CC11A3B5B61EE434E71643F3BE84D1; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:22:25.690Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:22:30.394Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:22:30.524Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:22:30 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=57c6c81c-52e1-40ba-8ff4-143e821e8acb;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=57c6c81c-52e1-40ba-8ff4-143e821e8acb;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=144B7105F7C43DA6FCCF14AF84254FBB; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:22:30.524Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
-
-[info] [2023-10-26T12:22:37.037Z] : [Angular-plugin]: 
+[info] [2023-10-27T06:17:45.683Z] : [Angular-plugin]: 
 [Angular-plugin]: 9 unchanged chunks
 [Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:22:36.916Z - Hash: eeda11e35744cd15 - Time: 925ms
-[info] [2023-10-26T12:22:37.039Z] : [Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:17:45.625Z - Hash: 119904447e2126c6 - Time: 932ms
+[info] [2023-10-27T06:17:45.685Z] : [Angular-plugin]: 
 [Angular-plugin]: ✔ Compiled successfully.
-[debug] [2023-10-26T12:22:38.640Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:22:38.794Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:22:38 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=f7a41497-5448-47a9-8dc6-b611c7d91a0d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f7a41497-5448-47a9-8dc6-b611c7d91a0d;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=D262AAAEE08050B358DABDE27FDA791F; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:22:38.796Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
-
-[debug] [2023-10-26T12:22:39.027Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:22:39.145Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:22:39 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=24ce7eba-6648-4102-add0-4fbc5dfc73f6;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=24ce7eba-6648-4102-add0-4fbc5dfc73f6;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=611C206988F5A4FDA2B97EB32B2BB2F8; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:22:39.146Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:26:11.660Z] : proxy closed
-[info] [2023-10-26T12:26:44.946Z] : Shutting down server
-[info] [2023-10-26T12:26:45.029Z] : 
-[info] [2023-10-26T12:26:45.030Z] : ✔ Shutdown complete
-[debug] [2023-10-26T12:26:45.030Z] : NO ERRORS REGISTERED
-[debug] [2023-10-26T12:26:45.031Z] : EXEC ENDED with event: serve, message: success
-[debug] [2023-10-26T12:26:45.031Z] : TOTAL DURATION OF COMMAND EXEC : 411255
-[debug] [2023-10-26T12:26:45.052Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
+[info] [2023-10-27T06:17:50.572Z] : Shutting down server
+[debug] [2023-10-27T06:17:50.712Z] : proxy closed
+[info] [2023-10-27T06:17:50.714Z] : 
+[info] [2023-10-27T06:17:50.714Z] : ✔ Shutdown complete
+[debug] [2023-10-27T06:17:50.714Z] : NO ERRORS REGISTERED
+[debug] [2023-10-27T06:17:50.715Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-10-27T06:17:50.715Z] : TOTAL DURATION OF COMMAND EXEC : 378406
+[debug] [2023-10-27T06:17:50.734Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
 <request body omitted>
 
-[debug] [2023-10-26T12:26:52.043Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:26:50 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=55de375b-c193-400c-86c6-3ef5c70e2de0;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=55de375b-c193-400c-86c6-3ef5c70e2de0;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+[debug] [2023-10-27T06:17:51.061Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:17:51 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=44d02da3-7b50-4baa-9796-3f2d8831e897;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=44d02da3-7b50-4baa-9796-3f2d8831e897;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
 
-[debug] [2023-10-26T12:28:11.497Z] : 
-[debug] [2023-10-26T12:28:11.498Z] : ----------------------------------------------------------------------
-[debug] [2023-10-26T12:28:11.499Z] : Command:      /usr/bin/node /usr/bin/catalyst deploy
-[debug] [2023-10-26T12:28:11.499Z] : CLI Version:  1.16.1
-[debug] [2023-10-26T12:28:11.500Z] : Platform:     linux
-[debug] [2023-10-26T12:28:11.500Z] : Node Version: v16.20.2
-[debug] [2023-10-26T12:28:11.501Z] : Time:         Thu Oct 26 2023 17:58:11 GMT+0530 (India Standard Time)
-[debug] [2023-10-26T12:28:11.502Z] : ----------------------------------------------------------------------
-[debug] [2023-10-26T12:28:11.502Z] : 
-[debug] [2023-10-26T12:28:12.251Z] : > authorizing via signed-in user option
-[debug] [2023-10-26T12:28:12.252Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
-[debug] [2023-10-26T12:28:12.268Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/5261000000007197 
+[debug] [2023-10-27T06:20:36.512Z] : 
+[debug] [2023-10-27T06:20:36.514Z] : ----------------------------------------------------------------------
+[debug] [2023-10-27T06:20:36.515Z] : Command:      /usr/bin/node /usr/bin/catalyst deploy
+[debug] [2023-10-27T06:20:36.515Z] : CLI Version:  1.16.1
+[debug] [2023-10-27T06:20:36.516Z] : Platform:     linux
+[debug] [2023-10-27T06:20:36.517Z] : Node Version: v16.20.2
+[debug] [2023-10-27T06:20:36.518Z] : Time:         Fri Oct 27 2023 11:50:36 GMT+0530 (India Standard Time)
+[debug] [2023-10-27T06:20:36.519Z] : ----------------------------------------------------------------------
+[debug] [2023-10-27T06:20:36.519Z] : 
+[debug] [2023-10-27T06:20:37.122Z] : > authorizing via signed-in user option
+[debug] [2023-10-27T06:20:37.122Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL","ZohoCatalyst.appsail.Update"]
+[debug] [2023-10-27T06:20:37.138Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/5261000000007197 
 
-[debug] [2023-10-26T12:28:17.433Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:28:17 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=8762b606-a542-4b75-9937-cfe795aaed63;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8762b606-a542-4b75-9937-cfe795aaed63;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+[debug] [2023-10-27T06:20:37.452Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:20:37 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=6b630de4-55cb-45ac-8fba-f4635ec9b7ac;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6b630de4-55cb-45ac-8fba-f4635ec9b7ac;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
 
-[debug] [2023-10-26T12:28:17.440Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/5261000000007197/environment 
+[debug] [2023-10-27T06:20:37.463Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/5261000000007197/environment 
 
-[debug] [2023-10-26T12:28:17.622Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:28:17 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=a82958af-6919-4e20-bba9-7b76d14740a8;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a82958af-6919-4e20-bba9-7b76d14740a8;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+[debug] [2023-10-27T06:20:37.743Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:20:37 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=7fcbd1a5-4dcd-43e4-8402-07d6edd5aa51;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=7fcbd1a5-4dcd-43e4-8402-07d6edd5aa51;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
 
-[info] [2023-10-26T12:28:18.055Z] : ℹ Plugin : "zcatalyst-cli-plugin-angular" is used for client deploy
-[info] [2023-10-26T12:28:18.056Z] : ℹ Building Application...
-[info] [2023-10-26T12:28:19.575Z] : [Angular-plugin]: Option "deployUrl" is deprecated: Use "baseHref" option, "APP_BASE_HREF" DI token or a combination of both instead. For more information, see https://angular.io/guide/deployment#the-deploy-url.
-[info] [2023-10-26T12:29:05.321Z] : [Angular-plugin]: 3 rules skipped due to selector errors:
+[info] [2023-10-27T06:20:38.029Z] : ℹ Plugin : "zcatalyst-cli-plugin-angular" is used for client deploy
+[info] [2023-10-27T06:20:38.030Z] : ℹ Building Application...
+[info] [2023-10-27T06:20:39.575Z] : [Angular-plugin]: Option "deployUrl" is deprecated: Use "baseHref" option, "APP_BASE_HREF" DI token or a combination of both instead. For more information, see https://angular.io/guide/deployment#the-deploy-url.
+[info] [2023-10-27T06:20:59.448Z] : [Angular-plugin]: 3 rules skipped due to selector errors:
 [Angular-plugin]:   .form-floating>~label -> Did not expect successive traversals.
 [Angular-plugin]:   .form-floating>~label -> Did not expect successive traversals.
 [Angular-plugin]:   .table>>>* -> Did not expect successive traversals.
-[info] [2023-10-26T12:29:05.334Z] : [Angular-plugin]: 
+[info] [2023-10-27T06:20:59.478Z] : [Angular-plugin]: 
 [Angular-plugin]: Initial Chunk Files           | Names                                            |  Raw Size | Estimated Transfer Size
 [Angular-plugin]: styles.c0b8eea4c08d5133.css   | styles                                           | 649.97 kB |                61.11 kB
 [Angular-plugin]: main.514927b381327de6.js      | main                                             | 521.67 kB |               140.23 kB
 [Angular-plugin]: scripts.3d37422cee1781e0.js   | scripts                                          | 491.18 kB |               145.61 kB
 [Angular-plugin]: polyfills.1227f3ae781759e0.js | polyfills                                        |  33.03 kB |                10.66 kB
-[Angular-plugin]: runtime.b43142e629cafeab.js   | runtime                                          |   2.79 kB |                 1.33 kB
+[Angular-plugin]: runtime.3b6446024f733fdd.js   | runtime                                          |   2.79 kB |                 1.33 kB
 [Angular-plugin]: 
-[Angular-plugin]:                               | Initial Total                                    |   1.66 MB |               358.93 kB
+[Angular-plugin]:                               | Initial Total                                    |   1.66 MB |               358.94 kB
 [Angular-plugin]: 
 [Angular-plugin]: Lazy Chunk Files              | Names                                            |  Raw Size | Estimated Transfer Size
 [Angular-plugin]: 380.f32aa74722b21c7e.js       | views-dashboard-pages-users-users-module         |  24.94 kB |                 6.07 kB
-[Angular-plugin]: 421.9a87d59ebce2b024.js       | layouts-dashboard-layout-dashboard-layout-module |  17.16 kB |                 4.38 kB
-[Angular-plugin]: 435.15401d541c4d7052.js       | views-home-pages-login-login-module              |  12
-[info] [2023-10-26T12:29:05.334Z] : [Angular-plugin]: .70 kB |                 4.03 kB
+[Angular-plugin]: 421.da3b3921cdd0204c.js       | layouts-dashboard-layout-dashboard-layout-module |  17.17 kB |                 4.39 kB
+[Angular-plugin]: 435.fe19ded2b66afb06.js       | views-home-pages-login-login-module              |  13
+[info] [2023-10-27T06:20:59.478Z] : [Angular-plugin]: .14 kB |                 4.20 kB
 [Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:29:05.329Z - Hash: 9227d07659b163b3 - Time: 44650ms
-[info] [2023-10-26T12:29:05.335Z] : [Angular-plugin]: 
+[Angular-plugin]: Build at: 2023-10-27T06:20:59.458Z - Hash: ed7a4d731ff2a9a1 - Time: 18626ms
+[info] [2023-10-27T06:20:59.486Z] : [Angular-plugin]: 
 [Angular-plugin]: Warning: /home/admin1/projects/catalyst-mean-app/client/src/app/shared-ui/filters-pipes/orderby.pipe.ts depends on 'lodash'. CommonJS or AMD dependencies can cause optimization bailouts.
 [Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
 [Angular-plugin]: 
@@ -382,460 +424,34 @@ Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:28:17 GMT","conten
 [Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
 [Angular-plugin]: 
 [Angular-plugin]: 
-[debug] [2023-10-26T12:29:10.347Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/5261000000007197/webapp 
+[debug] [2023-10-27T06:21:04.687Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/project/5261000000007197/webapp 
 
-[debug] [2023-10-26T12:29:18.790Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:29:17 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=9209d815-f903-4215-932a-c6b0ea761b80;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=9209d815-f903-4215-932a-c6b0ea761b80;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+[debug] [2023-10-27T06:21:11.984Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:21:11 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=100f46f3-5ab1-48fb-8fb3-0dde443b5510;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=100f46f3-5ab1-48fb-8fb3-0dde443b5510;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
 
-[info] [2023-10-26T12:29:18.821Z] : 
-[info] [2023-10-26T12:29:18.821Z] : Executing predeploy script in /home/admin1/projects/catalyst-mean-app/appsail-nodejs
-[debug] [2023-10-26T12:29:18.822Z] : Executing command > npm install
-[info] [2023-10-26T12:29:18.822Z] : > npm install
-[error] [2023-10-26T12:29:23.248Z] : uncaughtException: ENXIO: no such device or address, open '/home/admin1/projects/catalyst-mean-app/appsail-nodejs/port'
-Error: ENXIO: no such device or address, open '/home/admin1/projects/catalyst-mean-app/appsail-nodejs/port'
-[error] [2023-10-26T12:29:23.258Z] : ✖ An unexpected error has occurred.
-[debug] [2023-10-26T12:29:23.258Z] : Error Stack: CatalystError: An unexpected error has occurred.
-    at exports.default (/usr/lib/node_modules/zcatalyst-cli/lib/errorOut.js:19:17)
-    at process.<anonymous> (/usr/lib/node_modules/zcatalyst-cli/lib/bin/catalyst.js:87:28)
-    at process.emit (node:events:525:35)
-    at processEmit [as emit] (/usr/lib/node_modules/zcatalyst-cli/node_modules/signal-exit/index.js:199:34)
-    at process._fatalException (node:internal/process/execution:149:25)
-[debug] [2023-10-26T12:29:23.259Z] : Original Error: Error: ENXIO: no such device or address, open '/home/admin1/projects/catalyst-mean-app/appsail-nodejs/port'
-[debug] [2023-10-26T12:29:23.259Z] : Error Status: 500
-[info] [2023-10-26T12:29:23.259Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
-[debug] [2023-10-26T12:38:21.582Z] : 
-[debug] [2023-10-26T12:38:21.583Z] : ----------------------------------------------------------------------
-[debug] [2023-10-26T12:38:21.584Z] : Command:      /usr/bin/node /usr/bin/catalyst serve
-[debug] [2023-10-26T12:38:21.584Z] : CLI Version:  1.16.1
-[debug] [2023-10-26T12:38:21.585Z] : Platform:     linux
-[debug] [2023-10-26T12:38:21.585Z] : Node Version: v16.20.2
-[debug] [2023-10-26T12:38:21.586Z] : Time:         Thu Oct 26 2023 18:08:21 GMT+0530 (India Standard Time)
-[debug] [2023-10-26T12:38:21.587Z] : ----------------------------------------------------------------------
-[debug] [2023-10-26T12:38:21.587Z] : 
-[debug] [2023-10-26T12:38:22.226Z] : > authorizing via signed-in user option
-[debug] [2023-10-26T12:38:22.227Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute"]
-[debug] [2023-10-26T12:38:22.242Z] : > refreshing access token <
-[debug] [2023-10-26T12:38:22.244Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.in/oauth/v2/token 
+[info] [2023-10-27T06:21:12.015Z] : 
+[info] [2023-10-27T06:21:12.016Z] : Executing predeploy script in /home/admin1/projects/catalyst-mean-app/appsail-nodejs
+[debug] [2023-10-27T06:21:12.016Z] : Executing command > npm install
+[info] [2023-10-27T06:21:12.016Z] : > npm install
+[debug] [2023-10-27T06:21:39.208Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.in/baas/v1/project/5261000000007197/appsail/upsert 
+
+[debug] [2023-10-27T06:21:44.089Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:21:44 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=e8c56a36-3dd4-41f6-8b4e-8c67609bb810;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e8c56a36-3dd4-41f6-8b4e-8c67609bb810;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-10-27T06:21:44.100Z] : 
+[info] [2023-10-27T06:21:44.103Z] : ✔ client: deploy successful
+[info] [2023-10-27T06:21:44.103Z] : ℹ client: URL => https://catalyst-mean-app-60024458376.development.catalystserverless.in/app/index.html
+[info] [2023-10-27T06:21:44.104Z] : 
+[info] [2023-10-27T06:21:44.104Z] : ℹ AppSail(AppSail): URL => https://appsail-50016224023.development.catalystappsail.in
+[info] [2023-10-27T06:21:44.105Z] : ✔ AppSail(AppSail): deploy successful
+[info] [2023-10-27T06:21:44.105Z] : 
+[info] [2023-10-27T06:21:44.105Z] : ✔ Catalyst deploy complete!
+[debug] [2023-10-27T06:21:44.108Z] : NO ERRORS REGISTERED
+[debug] [2023-10-27T06:21:44.109Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2023-10-27T06:21:44.109Z] : TOTAL DURATION OF COMMAND EXEC : 67001
+[debug] [2023-10-27T06:21:44.122Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
 <request body omitted>
 
-[debug] [2023-10-26T12:38:22.687Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:38:22 GMT","content-type":"application/json;charset=UTF-8","content-length":"1944","connection":"close","set-cookie":["6e73717622=4440853cd702ab2a51402c119608ee85; Path=/","iamcsr=eb3c9d88-0729-46e9-a9bd-6ca7527a4b88;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=eb3c9d88-0729-46e9-a9bd-6ca7527a4b88;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
-
-[debug] [2023-10-26T12:38:22.712Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/5261000000007197 
-
-[debug] [2023-10-26T12:38:24.461Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:38:23 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=376ecf7e-327d-4e82-8761-c730e2ce13bb;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=376ecf7e-327d-4e82-8761-c730e2ce13bb;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
-
-[debug] [2023-10-26T12:38:24.466Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/5261000000007197/environment 
-
-[debug] [2023-10-26T12:38:26.600Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:38:25 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=5d24ad42-b426-4e22-aeda-efa980af0309;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5d24ad42-b426-4e22-aeda-efa980af0309;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
-
-[debug] [2023-10-26T12:38:26.877Z] : http port : '3000' is not available. Hence port '3001' will be used instead.
-[debug] [2023-10-26T12:38:27.145Z] : No basic functions to add
-[info] [2023-10-26T12:38:27.147Z] : 
-[info] [2023-10-26T12:38:27.148Z] : ℹ Client[angular-app]: Plugin : "zcatalyst-cli-plugin-angular" is used for client serve
-[info] [2023-10-26T12:38:27.148Z] : 
-[info] [2023-10-26T12:38:27.472Z] : 
-[info] [2023-10-26T12:38:27.472Z] : Executing AppSail [PRESERVE] [AppSail] script in /home/admin1/projects/catalyst-mean-app/appsail-nodejs
-[debug] [2023-10-26T12:38:27.472Z] : Executing command > npm install
-[info] [2023-10-26T12:38:27.472Z] : > npm install
-[info] [2023-10-26T12:38:36.018Z] : [Angular-plugin]: NOTICE: Hot Module Replacement (HMR) is enabled for the dev server.
-[Angular-plugin]: See https://webpack.js.org/guides/hot-module-replacement for information on working with HMR for Webpack.
-[info] [2023-10-26T12:38:36.977Z] : 
-[info] [2023-10-26T12:38:36.978Z] :  >>>>>>>>>>>>>> AppSail <<<<<<<<<<<<<< 
-[info] [2023-10-26T12:38:36.979Z] : ℹ AppSail: http://localhost:3001
-[info] [2023-10-26T12:38:36.979Z] : 
-[info] [2023-10-26T12:38:36.979Z] : 
-[info] [2023-10-26T12:38:36.979Z] :  >>>>>>>>>>>>> Web Client <<<<<<<<<<<<
-[info] [2023-10-26T12:38:36.980Z] : ℹ client[angular-app]: http://localhost:3000/app/
-[info] [2023-10-26T12:38:36.980Z] : 
-[info] [2023-10-26T12:39:19.833Z] : [Angular-plugin]: 
-[Angular-plugin]: Initial Chunk Files                                            | Names                                            |  Raw Size
-[Angular-plugin]: vendor.js                                                      | vendor                                           |   4.04 MB | 
-[Angular-plugin]: styles.css, styles.js                                          | styles                                           |   1.10 MB | 
-[Angular-plugin]: scripts.js                                                     | scripts                                          |   1.02 MB | 
-[Angular-plugin]: polyfills.js                                                   | polyfills                                        | 337.13 kB | 
-[Angular-plugin]: main.js                                                        | main                                             | 105.42 kB | 
-[Angular-plugin]: runtime.js                                                     | runtime                                          |  51.41 kB | 
-[Angular-plugin]: 
-[Angular-plugin]:                                                                | Initial Total                                    |   6.64 MB
-[Angular-plugin]: 
-[Angular-plugin]: Lazy Chunk Files                                               | Names                                            |  Raw Size
-[Angular-plugin]: src_app_views_dashboard-pages_users_users_module_ts.js         | views-dashboard-pages-users-users-module         |  76.89 kB | 
-[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js              | views-home-pages-login-login-module              |  59
-[info] [2023-10-26T12:39:19.833Z] : [Angular-plugin]: .42 kB | 
-[Angular-plugin]: src_app_layouts_dashboard-layout_dashboard-layout_module_ts.js | layouts-dashboard-layout-dashboard-layout-module |  52.73 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:39:19.770Z - Hash: de79cd9545b4d35e - Time: 41813ms
-[info] [2023-10-26T12:39:19.834Z] : [Angular-plugin]: 
-[Angular-plugin]: Warning: /home/admin1/projects/catalyst-mean-app/client/src/app/shared-ui/filters-pipes/orderby.pipe.ts depends on 'lodash'. CommonJS or AMD dependencies can cause optimization bailouts.
-[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
-[Angular-plugin]: 
-[Angular-plugin]: Warning: /home/admin1/projects/catalyst-mean-app/client/src/app/shared-ui/services/jwt.service.ts depends on 'crypto-js'. CommonJS or AMD dependencies can cause optimization bailouts.
-[Angular-plugin]: For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
-[Angular-plugin]: 
-[Angular-plugin]: 
-[info] [2023-10-26T12:39:19.835Z] : [Angular-plugin]: 
-[Angular-plugin]: ** Angular Live Development Server is listening on 127.0.0.1:3050, open your browser on http://127.0.0.1:3050/app **
-[Angular-plugin]: 
-[info] [2023-10-26T12:39:19.836Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:39:20.176Z] : [Angular-plugin]: Please visit this url to access angular-app: http://localhost:3000/app/
-[info] [2023-10-26T12:39:22.351Z] : [Angular-plugin]: 
-[Angular-plugin]: Initial Chunk Files                                | Names   | Raw Size
-[Angular-plugin]: runtime.js, runtime.de79cd9545b4d35e.hot-update.js | runtime | 51.76 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: 8 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:39:22.198Z - Hash: 11b830c7e1f54ea4 - Time: 1810ms
-[info] [2023-10-26T12:39:22.353Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:39:47.396Z] : [Angular-plugin]: 
-[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               |  Raw Size
-[Angular-plugin]: main.js, main.11b830c7e1f54ea4.hot-update.js                                                                                     | main                                | 107.55 kB | 
-[Angular-plugin]: runtime.js, runtime.11b830c7e1f54ea4.hot-update.js                                                                               | runtime                             |  51.76 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               |  Raw Size
-[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.11b830c7e1f54ea4.hot-update.js | views-home-pages-login-login-module |  74.88 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: 6 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:39:47.359Z - Hash: ebd20a4d07d6ac02 - Time: 3522ms
-[info] [2023-10-26T12:39:47.397Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:40:19.890Z] : [Angular-plugin]: 
-[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
-[Angular-plugin]: runtime.js, runtime.ebd20a4d07d6ac02.hot-update.js                                                                               | runtime                             | 51.76 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
-[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.ebd20a4d07d6ac02.hot-update.js | views-home-pages-login-login-module | 69.62 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: 7 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:40:19.728Z - Hash: bcea8d7583f771a0 - Time: 2083ms
-[info] [2023-10-26T12:40:19.893Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[debug] [2023-10-26T12:40:20.100Z] : proxy closed
-[info] [2023-10-26T12:41:16.454Z] : [Angular-plugin]: 
-[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
-[Angular-plugin]: runtime.js, runtime.bcea8d7583f771a0.hot-update.js                                                                               | runtime                             | 51.76 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
-[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.bcea8d7583f771a0.hot-update.js | views-home-pages-login-login-module | 69.87 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: 7 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:41:16.424Z - Hash: ff1bf59a8f627ecb - Time: 1572ms
-[info] [2023-10-26T12:41:16.471Z] : [Angular-plugin]: 
-[Angular-plugin]: Error: src/app/views/home-pages/login/login.component.ts:23:16 - error TS2304: Cannot find name 'currentUser'.
-[Angular-plugin]: 
-[Angular-plugin]: 23   currentUser: currentUser = new currentUser();
-[Angular-plugin]:                   ~~~~~~~~~~~
-[Angular-plugin]: 
-[Angular-plugin]: 
-[Angular-plugin]: Error: src/app/views/home-pages/login/login.component.ts:23:34 - error TS2663: Cannot find name 'currentUser'. Did you mean the instance member 'this.currentUser'?
-[Angular-plugin]: 
-[Angular-plugin]: 23   currentUser: currentUser = new currentUser();
-[Angular-plugin]:                                     ~~~~~~~~~~~
-[Angular-plugin]: 
-[Angular-plugin]: 
-[Angular-plugin]: 
-[info] [2023-10-26T12:41:16.473Z] : [Angular-plugin]: 
-[Angular-plugin]: ✖ Failed to compile.
-[info] [2023-10-26T12:41:19.197Z] : [Angular-plugin]: 
-[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
-[Angular-plugin]: runtime.js, runtime.bcea8d7583f771a0.hot-update.js                                                                               | runtime                             | 51.76 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
-[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.bcea8d7583f771a0.hot-update.js | views-home-pages-login-login-module | 69.96 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: 7 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:41:19.160Z - Hash: 192b04f9ba69694c - Time: 1365ms
-[info] [2023-10-26T12:41:19.199Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:41:41.078Z] : [Angular-plugin]: 
-[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
-[Angular-plugin]: runtime.js, runtime.192b04f9ba69694c.hot-update.js                                                                               | runtime                             | 51.76 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
-[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.192b04f9ba69694c.hot-update.js | views-home-pages-login-login-module | 69.80 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: 7 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:41:41.001Z - Hash: 172c2a4e8afaa5ed - Time: 1602ms
-[info] [2023-10-26T12:41:41.080Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:41:42.261Z] : [Angular-plugin]: 
-[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
-[Angular-plugin]: runtime.js, runtime.172c2a4e8afaa5ed.hot-update.js                                                                               | runtime                             | 51.76 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
-[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.172c2a4e8afaa5ed.hot-update.js | views-home-pages-login-login-module | 69.80 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: 7 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:41:42.222Z - Hash: 803f65dd2438b6f4 - Time: 1013ms
-[info] [2023-10-26T12:41:42.262Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[debug] [2023-10-26T12:41:43.176Z] : proxy closed
-[info] [2023-10-26T12:43:35.368Z] : [Angular-plugin]: 
-[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
-[Angular-plugin]: runtime.js, runtime.803f65dd2438b6f4.hot-update.js                                                                               | runtime                             | 51.76 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
-[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.803f65dd2438b6f4.hot-update.js | views-home-pages-login-login-module | 70.06 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: 7 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:43:35.225Z - Hash: 232b35b820b45338 - Time: 1751ms
-[info] [2023-10-26T12:43:35.370Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:43:36.552Z] : [Angular-plugin]: 
-[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
-[Angular-plugin]: runtime.js, runtime.232b35b820b45338.hot-update.js                                                                               | runtime                             | 51.76 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
-[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.232b35b820b45338.hot-update.js | views-home-pages-login-login-module | 70.06 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: 7 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:43:36.521Z - Hash: 90f5e1421e72491a - Time: 959ms
-[info] [2023-10-26T12:43:36.553Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[debug] [2023-10-26T12:43:37.002Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:43:37.071Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:43:40.347Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:43:40 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=5cbfa6a4-6c3c-44d4-a2c3-4c9ca4dd49df;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5cbfa6a4-6c3c-44d4-a2c3-4c9ca4dd49df;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=7D50E936F7C1DAF9508B08AFED02AC73; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:43:40.351Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:43:40.357Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:43:40 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=4293ffb9-cb7d-4e47-9399-840ea6a49c60;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4293ffb9-cb7d-4e47-9399-840ea6a49c60;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=77664235C0C9DAAD5C77FAE65172CCAE; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:43:40.358Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:43:44.362Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:43:45.477Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:43:45 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=d605f45c-a5bc-442c-9b56-71a05eba940a;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d605f45c-a5bc-442c-9b56-71a05eba940a;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=EBB1937B3211116A667D3097E03AE055; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:43:45.478Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
-
-[debug] [2023-10-26T12:43:47.229Z] : proxy closed
-[debug] [2023-10-26T12:43:50.583Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:43:50.874Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:43:50 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=4c54097b-957e-414c-8b00-772073060c96;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4c54097b-957e-414c-8b00-772073060c96;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=5D0910782A94643DF45BF9D932B318E4; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:43:50.875Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
-
-[debug] [2023-10-26T12:43:51.276Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:43:52.066Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:43:51 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=11678982-7de0-4967-b040-fda59d1c40ca;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=11678982-7de0-4967-b040-fda59d1c40ca;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=8B4330C38D31A9903B90D6F416F44B80; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:43:52.067Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:43:53.334Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:43:53.644Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:43:53 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=c48ffb5b-9091-4fd2-ae81-59df220c1ed7;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c48ffb5b-9091-4fd2-ae81-59df220c1ed7;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=44C4538A7A49D7366A99082B612869A5; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:43:53.646Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:43:54.737Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:43:56.393Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:43:55 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=29d93d4c-b2ad-4e5c-b7ca-d014269b3880;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=29d93d4c-b2ad-4e5c-b7ca-d014269b3880;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=17A787FEAE3E285EB4C55DCA3D1D3380; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:43:56.395Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:43:58.627Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:43:58.865Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:43:58 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=29645ad0-3964-4ede-a56f-ae2812bcf677;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=29645ad0-3964-4ede-a56f-ae2812bcf677;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=DE4912428AE1A784299EA504584EB4B4; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:43:58.867Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[info] [2023-10-26T12:44:05.381Z] : [Angular-plugin]: 
-[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
-[Angular-plugin]: runtime.js, runtime.90f5e1421e72491a.hot-update.js                                                                               | runtime                             | 51.76 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
-[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.90f5e1421e72491a.hot-update.js | views-home-pages-login-login-module | 69.94 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: 7 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:44:05.308Z - Hash: f9253eca3b0cf4c5 - Time: 1770ms
-[info] [2023-10-26T12:44:05.383Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[debug] [2023-10-26T12:44:06.015Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:44:06.300Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:44:06 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=01cc0377-6277-4bb7-914d-1cb54d139acb;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=01cc0377-6277-4bb7-914d-1cb54d139acb;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=890BFA64E2B706912C1478FE06BC20A4; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:44:06.302Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[info] [2023-10-26T12:44:24.446Z] : [Angular-plugin]: 
-[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
-[Angular-plugin]: runtime.js, runtime.f9253eca3b0cf4c5.hot-update.js                                                                               | runtime                             | 51.76 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
-[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.f9253eca3b0cf4c5.hot-update.js | views-home-pages-login-login-module | 69.92 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: 7 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:44:24.365Z - Hash: 98b902dd2cb179d3 - Time: 1285ms
-[info] [2023-10-26T12:44:24.447Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:44:25.591Z] : [Angular-plugin]: 
-[Angular-plugin]: Initial Chunk Files                                                                                                              | Names                               | Raw Size
-[Angular-plugin]: runtime.js, runtime.98b902dd2cb179d3.hot-update.js                                                                               | runtime                             | 51.76 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: Lazy Chunk Files                                                                                                                 | Names                               | Raw Size
-[Angular-plugin]: src_app_views_home-pages_login_login_module_ts.js, src_app_views_home-pages_login_login_module_ts.98b902dd2cb179d3.hot-update.js | views-home-pages-login-login-module | 69.92 kB | 
-[Angular-plugin]: 
-[Angular-plugin]: 7 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:44:25.575Z - Hash: 28739b66c016593e - Time: 858ms
-[info] [2023-10-26T12:44:25.592Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[debug] [2023-10-26T12:44:58.610Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:44:59.144Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:44:59 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=b53d0017-f024-4213-8e6d-f55b615218f6;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=b53d0017-f024-4213-8e6d-f55b615218f6;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=DDDAC2253D8293F25AFB65EB947D3BFF; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:44:59.148Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
-
-[debug] [2023-10-26T12:44:59.930Z] : proxy closed
-[debug] [2023-10-26T12:45:03.604Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:45:03.994Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:45:03 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"101","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=3a309ddc-5d54-4465-9e48-4c45631ed0d3;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=3a309ddc-5d54-4465-9e48-4c45631ed0d3;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=44FD88149372EAD9F94182E3831BD47F; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:45:03.996Z] : Response Body : {"status":"failure","data":{"error_code":"AUTHENTICATION_FAILURE","message":"Authentication failed"}}
-
-[debug] [2023-10-26T12:45:06.636Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:45:07.029Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:45:06 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=a56ea4ef-4650-43a1-976c-5533854caee7;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=a56ea4ef-4650-43a1-976c-5533854caee7;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=F485B4C9C82ECAC6AF2669D0FF5FE385; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:45:07.031Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:45:09.586Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:45:09.816Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:45:09 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=cfb94f09-a84e-4ee1-bbcd-b666b5fde26b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=cfb94f09-a84e-4ee1-bbcd-b666b5fde26b;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=EB5A14AF38A1510EF987DFDB2143CF9A; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:45:09.818Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:45:37.406Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:45:38.052Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:45:37 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=8edce36f-ef6f-42a5-9c72-35797f5328ee;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=8edce36f-ef6f-42a5-9c72-35797f5328ee;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=4A6C651B0888B9B9583B55D422BD359D; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:45:38.054Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:45:41.809Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:45:42.019Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:45:41 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=19814cbb-27b9-49e9-b296-e33e4ed42921;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=19814cbb-27b9-49e9-b296-e33e4ed42921;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=B0C72D7A6006FE6FA6AFAF44BD32F4BF; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:45:42.021Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:45:43.049Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:45:43.193Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:45:43 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=94fb2ff6-872d-45dd-bfd4-9704aae22d79;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=94fb2ff6-872d-45dd-bfd4-9704aae22d79;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=7670FAC3FA4AEB0A8E8EF7A12D09A12A; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:45:43.195Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:46:05.199Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:46:05.475Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:46:05 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=c572e3bd-d41b-4f13-b7f7-a38855210509;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=c572e3bd-d41b-4f13-b7f7-a38855210509;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=77CB507BB53D2B267F04D4B5870A45F1; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:46:05.477Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:46:06.867Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:46:07.091Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:46:07 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=91219ee0-b362-475f-80a4-896b5ff0a139;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=91219ee0-b362-475f-80a4-896b5ff0a139;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=E972C597A9B5571CEE036F7E4A400A0B; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:46:07.092Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:46:08.247Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:46:14.065Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:46:13 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=e9966028-c28d-47ab-9e20-0d780ea0a7c5;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e9966028-c28d-47ab-9e20-0d780ea0a7c5;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=2F0EDCA6E32BAF1A49CDD44DCFB3FFA5; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:46:14.067Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:46:15.996Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:46:17.895Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:46:17 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=84802265-e912-47da-8f63-fbe001ab2b1b;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=84802265-e912-47da-8f63-fbe001ab2b1b;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=426A75102F5B7FBA96D0D4064BCB5738; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:46:17.896Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:46:19.681Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:46:19.841Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:46:19 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=95767a21-daf9-468f-bf87-f53cc804bd9e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=95767a21-daf9-468f-bf87-f53cc804bd9e;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=5CC2126B0B24C5026B5DDA6BD1775BC9; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:46:19.841Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[debug] [2023-10-26T12:46:22.653Z] : >>>> HTTP REQUEST : GET https://catalyst-mean-app-60024458376.development.catalystserverless.in/baas/v1/project/5261000000007197/project-user/current 
-
-[debug] [2023-10-26T12:46:22.956Z] : <<<< HTTP RESPONSE : 401
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:46:22 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"90","connection":"close","set-cookie":["3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/","ZD_CSRF_TOKEN=5fe641ec-1880-47b1-bce6-03eaba59c88d;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5fe641ec-1880-47b1-bce6-03eaba59c88d;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=10AD3E98A301A0D9AEE3A984AD3FB987; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY"}
-
-[debug] [2023-10-26T12:46:22.958Z] : Response Body : {"status":"failure","data":{"error_code":"INVALID_TOKEN","message":"invalid oauth token"}}
-
-[info] [2023-10-26T12:46:36.489Z] : [Angular-plugin]: 
-[Angular-plugin]: 9 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:46:36.432Z - Hash: 28739b66c016593e - Time: 908ms
-[info] [2023-10-26T12:46:36.491Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:46:37.361Z] : [Angular-plugin]: 
-[Angular-plugin]: 9 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:46:37.331Z - Hash: 28739b66c016593e - Time: 576ms
-[info] [2023-10-26T12:46:37.362Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:46:38.094Z] : [Angular-plugin]: 
-[Angular-plugin]: 9 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:46:38.045Z - Hash: 28739b66c016593e - Time: 596ms
-[info] [2023-10-26T12:46:38.096Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:46:39.062Z] : [Angular-plugin]: 
-[Angular-plugin]: 9 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:46:39.043Z - Hash: 28739b66c016593e - Time: 618ms
-[info] [2023-10-26T12:46:39.063Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:46:39.689Z] : [Angular-plugin]: 
-[Angular-plugin]: 9 unchanged chunks
-[Angular-plugin]: 
-[Angular-plugin]: Build at: 2023-10-26T12:46:39.668Z - Hash: 28739b66c016593e - Time: 533ms
-[info] [2023-10-26T12:46:39.690Z] : [Angular-plugin]: 
-[Angular-plugin]: ✔ Compiled successfully.
-[info] [2023-10-26T12:50:12.794Z] : Shutting down server
-[debug] [2023-10-26T12:50:12.867Z] : proxy closed
-[info] [2023-10-26T12:50:12.870Z] : 
-[info] [2023-10-26T12:50:12.870Z] : ✔ Shutdown complete
-[debug] [2023-10-26T12:50:12.871Z] : NO ERRORS REGISTERED
-[debug] [2023-10-26T12:50:12.872Z] : EXEC ENDED with event: serve, message: success
-[debug] [2023-10-26T12:50:12.872Z] : TOTAL DURATION OF COMMAND EXEC : 710657
-[debug] [2023-10-26T12:50:12.897Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.in/baas/v1/cli/logs 
-<request body omitted>
-
-[debug] [2023-10-26T12:50:13.596Z] : <<<< HTTP RESPONSE : 200
-Response Headers: {"server":"ZGS","date":"Thu, 26 Oct 2023 12:50:13 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=31927e77-1877-493a-8dbe-05ebeab6f697;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=31927e77-1877-493a-8dbe-05ebeab6f697;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+[debug] [2023-10-27T06:21:44.295Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 27 Oct 2023 06:21:44 GMT","content-length":"0","connection":"close","set-cookie":["3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/","ZD_CSRF_TOKEN=e91b5baf-af8c-4185-97b5-517cdd0153d0;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=e91b5baf-af8c-4185-97b5-517cdd0153d0;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
 

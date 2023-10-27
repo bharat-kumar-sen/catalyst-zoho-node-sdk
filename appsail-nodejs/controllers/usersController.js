@@ -17,7 +17,6 @@ exports.saveUserInfo = async (req, res) => {
   var Usertbl = await this.catalystZohoTableConfig(req, 'users');
   let rowPromise
   if(postData.ROWID) {
-    console.log("postData=======", postData);
      rowPromise = Usertbl.updateRow(postData)    
   } else {
      rowPromise = Usertbl.insertRow(postData);

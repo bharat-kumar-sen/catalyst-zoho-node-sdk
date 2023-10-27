@@ -3,13 +3,10 @@ var createError = require("http-errors");
 const express = require("express");
 const app = express();
 const session = require('express-session');
-var path = require("path");
 var bodyParser = require('body-parser'),
   cors = require("cors")
 var cookieParser = require("cookie-parser");
 const logger = require('morgan');
-const globalService = require("./core/globalService");
-var server
 
 
 var indexRouter = require("./routes/index");
@@ -40,41 +37,6 @@ app.use(
     credentials: true,
   })
 );
-// HERE WE ARE DOING AUTHORIZATION WITH API/UI WITHOUT UI WE CAN'T ACCESS OUR API. IT WILL BE CHANGE AFTER LOGIN ENV.authorization
-/* app.use(async (req, res) => {
-  let authorization = req.headers.authorization
-  if (authorization) {
-    if (req.headers.authorization.split(" ").length == 2) {
-      authorization = req.headers.authorization.split(" ")[1]
-    } else {
-      authorization = req.headers.authorization
-    }
-    globalService.verifyToken(authorization, (verifyResp) => {
-      if (verifyResp.verify) {
-        return req.next();
-      } else {
-        return res.json({
-          status: 401,
-          error: "You are unauthorized users.",
-        });
-      }
-    });
-  } else {
-    let UnauthenticationPages = globalService.authenticationFalsePage();
-    let pageSegment = req.url.split('/');
-    const foundPages = UnauthenticationPages.find((page) => page === pageSegment[2])
-    console.log("foundPages", foundPages)
-    if (foundPages) {
-      return req.next();
-    } else {
-      return res.json({
-        status: 401,
-        error: "You are unauthorized users.",
-      });
-    }
-  }
-})
- */
 app.use(express.urlencoded({
   extended: true
 }));
