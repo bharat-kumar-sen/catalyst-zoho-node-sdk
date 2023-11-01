@@ -1,10 +1,7 @@
 {
-  "functions": {
-    "targets": [
-      "api"
-    ],
-    "ignore": [],
-    "source": "functions"
+  "client": {
+    "source": "client",
+    "plugin": "zcatalyst-cli-plugin-angular"
   },
   "appsail": [
     {
