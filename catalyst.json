@@ -1,12 +1,9 @@
 {
-  "client": {
-    "source": "client",
-    "plugin": "zcatalyst-cli-plugin-angular"
-  },
-  "appsail": [
-    {
-      "source": "/home/admin1/projects/catalyst-mean-app/appsail-nodejs",
-      "name": "AppSail"
-    }
-  ]
+  "functions": {
+    "targets": [
+      "users"
+    ],
+    "ignore": [],
+    "source": "functions"
+  }
 }
