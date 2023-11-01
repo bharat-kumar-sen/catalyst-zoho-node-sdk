@@ -28,7 +28,7 @@ app.post('/', async(req,res) => {
   if(this[req.query.api_type]) {
 		this[req.query.api_type](req,res)
 	} else {
-		res.status(500).json({message: 'there are no api found please check in server'})
+		res.status(500).json({message: 'There are no api found please check in server'})
 	}
 });
 
@@ -36,7 +36,15 @@ app.get('/', async(req,res) => {
   if(this[req.query.api_type]) {
 		this[req.query.api_type](req,res)
 	} else {
-		res.status(500).json({message: 'there are no api found please check in server'})
+		res.status(500).json({message: 'There are no api found please check in server'})
+	}
+});
+
+app.delete('/:id', async(req,res) => {
+  if(this[req.query.api_type]) {
+		this[req.query.api_type](req,res)
+	} else {
+		res.status(500).json({message: 'There are no api found please check in server'})
 	}
 });
 
