@@ -1,7 +1,7 @@
 {
   "functions": {
     "targets": [
-      "api"
+      "users"
     ],
     "ignore": [],
     "source": "functions"
