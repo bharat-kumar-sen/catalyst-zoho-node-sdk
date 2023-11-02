@@ -25,6 +25,14 @@ const routes: Routes = [
             '../../views/dashboard-pages/users/users.module'
           ).then((mod) => mod.UsersModule),
       },
+      {
+        path: 'server-less',
+        canActivate: [AuthGuard],
+        loadChildren: () =>
+          import(
+            '../../views/dashboard-pages/serverless-users/users.module'
+          ).then((mod) => mod.UsersModule),
+      },
     ],
   },
 ];
