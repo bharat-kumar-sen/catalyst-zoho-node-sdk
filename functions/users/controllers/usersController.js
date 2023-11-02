@@ -121,7 +121,8 @@ exports.logout = (req, res) => {
 };
 
 exports.deleteUser = async (req, res) => {
-  const ROWID = req.params.id;
+  // const ROWID = req.params.id;
+  const ROWID = req.body.ROWID;
 	var Usertbl = await this.catalystZohoTableConfig(req, 'users');
 	let rowPromise = Usertbl.deleteRow(ROWID);
 	rowPromise.then((row) => {

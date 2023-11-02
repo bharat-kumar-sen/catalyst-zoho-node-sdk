@@ -11,6 +11,7 @@
 export const environment: any = {
   production: false,
   baseUrl: 'http://localhost:3001/api/v1/',
+  SlessbaseUrl: 'http://localhost:3000/server/',
   // baseUrl: 'http://desktop.amwebtech.org:8001/',
   // baseUrl: 'http://desktop.amwebtech.org:3000/',
   cookieToken: 'zoho1qazxcatasw2C',

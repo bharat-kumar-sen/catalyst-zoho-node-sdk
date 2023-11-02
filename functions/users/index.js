@@ -7,6 +7,7 @@ require("dotenv").config();
 const express = require('express');
 const app = express();
 var bodyParser = require('body-parser')
+var cors = require("cors");
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -19,7 +20,12 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }));
-
+app.use(
+  cors({
+    origin: ["http://localhost:4200"],
+    credentials: true,
+  })
+);
 
 const usersCtl = require('./controllers/usersController');
 app.post('/', async(req,res) => {
@@ -38,14 +44,14 @@ app.get('/', async(req,res) => {
 	}
 });
 
-app.delete('/:id', async(req,res) => {
-  console.log('delete=======', req.params.id)
-  if(usersCtl[req.query.api_type]) {
-		usersCtl[req.query.api_type](req,res)
-	} else {
-		res.status(400).json({message: 'There are no api found please check in server'})
-	}
-});
+// app.delete('/:id', async(req,res) => {
+//   console.log('delete=======', req.params.id)
+//   if(usersCtl[req.query.api_type]) {
+// 		usersCtl[req.query.api_type](req,res)
+// 	} else {
+// 		res.status(400).json({message: 'There are no api found please check in server'})
+// 	}
+// });
 
 // Export module
 module.exports = app;
