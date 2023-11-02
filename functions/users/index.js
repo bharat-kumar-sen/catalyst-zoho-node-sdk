@@ -28,7 +28,7 @@ app.post('/', async(req,res) => {
   if(this[req.query.api_type]) {
 		this[req.query.api_type](req,res)
 	} else {
-		res.status(500).json({message: 'There are no api found please check in server'})
+		res.status(400).json({message: 'There are no api found please check in server'})
 	}
 });
 
@@ -36,7 +36,7 @@ app.get('/', async(req,res) => {
   if(this[req.query.api_type]) {
 		this[req.query.api_type](req,res)
 	} else {
-		res.status(500).json({message: 'There are no api found please check in server'})
+		res.status(400).json({message: 'There are no api found please check in server'})
 	}
 });
 
@@ -44,7 +44,7 @@ app.delete('/:id', async(req,res) => {
   if(this[req.query.api_type]) {
 		this[req.query.api_type](req,res)
 	} else {
-		res.status(500).json({message: 'There are no api found please check in server'})
+		res.status(400).json({message: 'There are no api found please check in server'})
 	}
 });
 
@@ -72,7 +72,7 @@ exports.saveUserInfo = async (req, res) => {
     })
 		// res.redirect(req.get('referer')); //Reloads the page again after a successful insert
 	}).catch(err => {
-    return res.status(500).json({
+    return res.status(400).json({
       message: "There are some error while save user.",
       status: 500,
       data: err,
