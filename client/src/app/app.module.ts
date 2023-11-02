@@ -24,13 +24,13 @@ import { AuthorizationInterceptor } from './shared-ui/guard/authorization.interc
       preventDuplicates: true,
     }),
   ],
-  providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: AuthorizationInterceptor,
-      multi: true
-    },
-  ],
+  // providers: [
+  //   {
+  //     provide: HTTP_INTERCEPTORS,
+  //     useClass: AuthorizationInterceptor,
+  //     multi: true
+  //   },
+  // ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -27,8 +27,8 @@ export class ApiService {
 
   post(url: string, param?: any): Observable<any> {
     const apiURL = this.apiBase + url;
-    // let headers = this.getHeader();
-    return this.httpClient.post(apiURL, param).pipe(
+    let headers = this.getHeader();
+    return this.httpClient.post(apiURL, param, {headers}).pipe(
       map((res) => res),
       catchError(async (error) => this.errorHandling(error))
     );
@@ -36,17 +36,17 @@ export class ApiService {
 
   get(url: string): Observable<any> {
     const apiUrl = this.apiBase + url;
-    // let headers = this.getHeader();
-    return this.httpClient.get(apiUrl).pipe(
+    let headers = this.getHeader();
+    return this.httpClient.get(apiUrl, {headers}).pipe(
       map((res) => res),
       catchError(async (error) => this.errorHandling(error))
     );
   }
 
   delete(url: string, param?: any): Observable<any> {
-    // let headers = this.getHeader();
+    let headers = this.getHeader();
     const apiURL = this.apiBase + url;
-    return this.httpClient.delete(apiURL, param).pipe(
+    return this.httpClient.delete(apiURL, {headers}).pipe(
       map((res) => res),
       catchError(async (error) => this.errorHandling(error))
     );
@@ -54,17 +54,17 @@ export class ApiService {
 
   put(url: string, param?: any): Observable<any> {
     const apiURL = this.apiBase + url;
-    // let headers = this.getHeader();
-    return this.httpClient.put(apiURL, param).pipe(
+    let headers = this.getHeader();
+    return this.httpClient.put(apiURL, param, {headers}).pipe(
       map((res) => res),
       catchError(async (error) => this.errorHandling(error))
     );
   }
 
   deletePost(url?: any): Observable<any> {
-    // let headers = this.getHeader();
+    let headers = this.getHeader();
     const apiURL = this.apiBase + url;
-    return this.httpClient.delete(apiURL).pipe(
+    return this.httpClient.delete(apiURL, {headers}).pipe(
       map((res) => res),
       catchError(async (error) => this.errorHandling(error))
     );
@@ -72,9 +72,9 @@ export class ApiService {
 
   getHeader() {
     return new HttpHeaders({
-      authorization: this.jwtService.getToken()
-        ? this.jwtService.getToken()
-        : environment.cookieToken,
+      Authorization: this.jwtService.getToken()
+          ? `Bearer ${this.jwtService.getToken()}`
+          : '',
     });
   }
 

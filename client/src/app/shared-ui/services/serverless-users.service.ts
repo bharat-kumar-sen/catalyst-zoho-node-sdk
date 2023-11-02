@@ -87,7 +87,7 @@ export class ServerlessUsersService {
   }
 
   public getUsersList(params?: object): Observable<any> {
-    return this.apiService.post(`${this.users}?api_type=getUsersList`, params).pipe(
+    return this.apiService.get(`${this.users}?api_type=getUsersList`).pipe(
       map((data: any) => {
         return data;
       })

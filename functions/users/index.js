@@ -22,7 +22,7 @@ app.use(session({
 }));
 app.use(
   cors({
-    origin: ["http://localhost:4200"],
+    origin: ["http://localhost:4200", 'https://appsail-50016224023.development.catalystappsail.in', 'https://catalyst-mean-app-60024458376.development.catalystserverless.in'],
     credentials: true,
   })
 );
