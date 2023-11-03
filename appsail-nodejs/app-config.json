@@ -1,5 +1,5 @@
 {
-	"command": "node index.js",
+	"command": "nodemon index.js",
 	"buildPath": "/home/admin1/projects/catalyst-mean-app/appsail-nodejs",
 	"stack": "node16",
 	"env_variables": {},
