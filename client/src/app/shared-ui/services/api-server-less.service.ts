@@ -25,10 +25,24 @@ export class ApiServerLessService {
     // private globalService: GlobalService
   ) {}
 
+
+
   post(url: string, param?: any): Observable<any> {
     const apiURL = this.apiBase + url;
     // let headers = this.getHeader();
-    return this.httpClient.post(apiURL, param).pipe(
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/x-www-form-urlencoded',
+    });
+
+    // Convert the data object to a URL-encoded string
+    const formData = new URLSearchParams();
+    for (const key in param) {
+      if (param.hasOwnProperty(key)) {
+        formData.set(key, param[key]);
+      }
+    }
+
+    return this.httpClient.post(apiURL, formData, { headers }).pipe(
       map((res) => res),
       catchError(async (error) => this.errorHandling(error))
     );
@@ -72,9 +86,10 @@ export class ApiServerLessService {
 
   getHeader() {
     return new HttpHeaders({
-      authorization: this.jwtService.getToken()
-        ? this.jwtService.getToken()
-        : environment.cookieToken,
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+      // authorization: this.jwtService.getToken()
+      //   ? this.jwtService.getToken()
+      //   : environment.cookieToken,
     });
   }
 

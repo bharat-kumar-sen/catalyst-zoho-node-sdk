@@ -5,9 +5,8 @@ import { ModalDirective } from 'ngx-bootstrap/modal';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { ToastrService } from 'ngx-toastr';
 import { Subject } from 'rxjs';
-import { jsonData } from '../../../shared-ui/json/json';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { GlobalService, UsersService } from 'src/app/shared-ui';
+import { GlobalService } from 'src/app/shared-ui';
 import { ServerlessUsersService } from 'src/app/shared-ui/services/serverless-users.service';
 
 @Component({
@@ -247,6 +246,7 @@ export class UsersComponent {
     this.usersService.saveUserInfo(userinfo).subscribe({
       next: (dataRes: any) => {
         this.spinner.hide()
+        console.log("dataRes=========", dataRes);
         if (dataRes.status === 200) {
           this.closeModel();
           this.reInitDataTable();

@@ -11,7 +11,8 @@
 export const environment: any = {
   production: false,
   baseUrl: 'http://localhost:3001/api/v1/',
-  SlessbaseUrl: 'http://localhost:3000/server/',
+  // SlessbaseUrl: 'http://localhost:3000/server/',
+  SlessbaseUrl: 'https://catalyst-mean-app-60024458376.development.catalystserverless.in/api/v1/',
   // baseUrl: 'http://desktop.amwebtech.org:8001/',
   // baseUrl: 'http://desktop.amwebtech.org:3000/',
   cookieToken: 'zoho1qazxcatasw2C',

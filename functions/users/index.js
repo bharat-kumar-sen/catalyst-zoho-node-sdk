@@ -20,6 +20,19 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }));
+/* 
+app.use(function(req, res, next) {
+	res.header('Access-Control-Allow-Origin', '*');
+	res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+	res.header('Access-Control-Allow-Headers', 'Content-type,Accept,x-access-token,X-Key');
+	if (req.method == 'OPTIONS') {
+		res.status(200).end();
+	} else {
+		next();
+	}
+});
+ */
+
 app.use(
   cors({
     origin: ["http://localhost:4200", 'https://appsail-50016224023.development.catalystappsail.in', 'https://catalyst-mean-app-60024458376.development.catalystserverless.in'],
