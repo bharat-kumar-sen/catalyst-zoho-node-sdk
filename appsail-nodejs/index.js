@@ -13,7 +13,7 @@ var indexRouter = require("./routes/index");
 var userRouter = require("./routes/users");
 const dotenv = require("dotenv");
 dotenv.config();
-
+const fileUpload = require('express-fileupload');
 const swaggerUi = require('swagger-ui-express');
 const swaggerJSONDoc = require('./swagger-3.json');
 app.use('/swagger-node-api', swaggerUi.serve, swaggerUi.setup(swaggerJSONDoc));
@@ -44,6 +44,7 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+app.use(fileUpload());
 
 // app.use("/", indexRouter);
 app.use("/api/v1/users", userRouter);

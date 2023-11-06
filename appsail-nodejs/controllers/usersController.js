@@ -5,7 +5,9 @@ const asyncLib = require("async");
 var catalyst = require('zcatalyst-sdk-node');
 
 require("dotenv").config();
-
+const fileUpload = require('express-fileupload');
+const fs = require('fs');
+const catalystFolderId = '5261000000018071'
 exports.saveUserInfo = async (req, res) => {
   const postData = req.body;
 
@@ -36,6 +38,72 @@ exports.saveUserInfo = async (req, res) => {
     })
 	});
 };
+
+exports.uploadfileWithUser = async (req, res)=> {
+  console.log("req========", req.body);
+  let postData = req.body;
+  try {
+    if(req.files) {
+      const app = catalyst.initialize(req);
+      req.files.image.name = Date.now() + "-" + req.files.image.name
+      await req.files.image.mv(`/tmp/${req.files.image.name}`);
+      var fileRes = await app.filestore().folder(catalystFolderId).uploadFile({
+        code: fs.createReadStream(`/tmp/${req.files.image.name}`),
+        name: req.files.image.name
+      });
+      postData.image =  req.files.image.name;
+    } 
+    if (postData.password) {
+      postData.password = globalService.encryptString(postData.password);
+    } else {
+      delete postData.password;
+    }  
+    var Usertbl = await this.catalystZohoTableConfig(req, 'users');
+    let rowPromise
+    if(postData.ROWID) {
+      rowPromise = Usertbl.updateRow(postData)    
+    } else {
+      rowPromise = Usertbl.insertRow(postData);
+    }
+    rowPromise.then((row) => {
+      return res.status(200).json({
+        message: "User Details saved successfully.",
+        status:200,
+        data: row,
+      })
+      // res.redirect(req.get('referer')); //Reloads the page again after a successful insert
+    }).catch(err => {
+      return res.status(500).json({
+        message: "There are some error while save user.",
+        status: 500,
+        data: err,
+      })
+    });
+	} catch (error) {
+		res.status(500).send({
+			"status": "Internal Server Error",
+			"message": error
+		})
+	}
+//   var app = catalyst.initialize(req);
+//   let filestore = app.filestore();
+//   let folder = filestore.folder('5261000000018071');
+//   const stream = Readable.from(req.file.buffer);
+//   var data = {
+//       code: stream,
+//       name: req.file.originalname
+//   };
+//   console.log(data);
+//   var result = await folder.uploadFile(data);
+//   return res.status(200).json(successResponse(result));
+//  //Provide the Folder ID 
+//  let config = { code:fs.createReadStream('empdata.csv'), name: 'testFile.txt' };
+// let uploadPromise = folder.uploadFile(config); 
+// //Pass the JSON object created for the file 
+//   uploadPromise.then((fileObject) => {
+//     console.log('testt=====', fileObject); 
+//   });
+}
 
 exports.doSignIn = async (req, res) => {
   var CatalystApp = catalyst.initialize(req);

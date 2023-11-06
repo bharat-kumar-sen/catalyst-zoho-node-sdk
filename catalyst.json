@@ -5,5 +5,11 @@
     ],
     "ignore": [],
     "source": "functions"
-  }
+  },
+  "appsail": [
+    {
+      "source": "/home/admin1/projects/catalyst-mean-app/appsail-nodejs",
+      "name": "AppSail"
+    }
+  ]
 }

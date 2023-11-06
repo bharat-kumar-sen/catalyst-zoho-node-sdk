@@ -23,8 +23,15 @@ export class UsersService {
     );
   }
 
-  public saveUserInfo(param: any): Observable<any> {   
+  public saveUserInfo(param: any): Observable<any> {
       return this.apiService.post(`${this.users}/saveUserInfo`, param).pipe(
+        map((data: any) => {
+          return data;
+        })
+      );
+  }
+  public saveUserInfoWithphoto(param: any): Observable<any> {
+      return this.apiService.post(`${this.users}/upload`, param).pipe(
         map((data: any) => {
           return data;
         })

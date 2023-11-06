@@ -8,4 +8,5 @@ router.get("/getUsersList", GlobalS.verifyToken, Users.getUsersList);
 router.post("/list", GlobalS.verifyToken, Users.getUsersList);
 router.get("/logout", Users.logout);
 router.delete("/delete/:id", GlobalS.verifyToken, Users.deleteUser);
+router.post("/upload", Users.uploadfileWithUser);
 module.exports = router;

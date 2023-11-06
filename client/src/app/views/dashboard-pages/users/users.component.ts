@@ -201,12 +201,10 @@ export class UsersComponent {
         reader.readAsDataURL(this.currentFile);
       }
     }
-    this.profileImage = event.target.files[0];
     if (this.userForm.value.image) {
       this.userForm.value.previous_image = this.userForm.value.image;
     }
-    console.log("this.profileImage", this.profileImage);
-    this.userForm.value.image = this.profileImage;
+    this.userForm.value.image =event.target.files[0];
   }
 
   changeUserStatus(user: any) {
@@ -243,7 +241,13 @@ export class UsersComponent {
   addUser() {
     let userinfo: any = Object.assign({}, this.userForm.value);
     this.spinner.show()
-    this.usersService.saveUserInfo(userinfo).subscribe({
+    var formData = new FormData();
+    Object.keys(userinfo).map((key)=>{
+      console.log('key================', userinfo[key]);
+      formData.append(key, userinfo[key]);
+    })
+
+    this.usersService.saveUserInfoWithphoto(formData).subscribe({
       next: (dataRes: any) => {
         this.spinner.hide()
         if (dataRes.status === 200) {
