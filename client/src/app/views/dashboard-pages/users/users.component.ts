@@ -82,7 +82,7 @@ export class UsersComponent {
       scrollX: true,
       scrollY: '300px',
       scrollCollapse: false,
-      pageLength: 5,
+      pageLength: 10,
       // lengthChange: false,
       columnDefs: [{ orderable: false, searchable: false, targets: [0] }],
       // order: [[1, 'asc']],

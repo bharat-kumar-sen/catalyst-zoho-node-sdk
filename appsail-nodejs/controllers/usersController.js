@@ -40,7 +40,6 @@ exports.saveUserInfo = async (req, res) => {
 };
 
 exports.uploadfileWithUser = async (req, res)=> {
-  console.log("req========", req.body);
   let postData = req.body;
   try {
     if(req.files) {
@@ -51,7 +50,7 @@ exports.uploadfileWithUser = async (req, res)=> {
         code: fs.createReadStream(`/tmp/${req.files.image.name}`),
         name: req.files.image.name
       });
-      postData.image =  req.files.image.name;
+      postData.image =  "https://console.catalyst.zoho.in/baas/v1/project/5261000000007197/folder/5261000000018071/file/"+ fileRes.id +"/download";
     } 
     if (postData.password) {
       postData.password = globalService.encryptString(postData.password);
