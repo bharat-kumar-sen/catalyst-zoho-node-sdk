@@ -11,7 +11,7 @@
             </h4>
          </div>
       </div>
-      <!-- <img src="https://console.catalyst.zoho.in/baas/v1/project/5261000000007197/folder/5261000000018071/file/5261000000018323/download" alt="Zoho Image"> -->
+      <!-- <img src="https://console.catalyst.zoho.in/baas/v1/project/5261000000007197/folder/5261000000018071/file/5261000000018071/download" alt="Zoho Image"> -->
 
       <table [dtOptions]="dtOptions" datatable [dtTrigger]="dtTrigger"
          class="table table-bordered table-hover table-striped user-table-font">
@@ -20,6 +20,7 @@
                <!-- <th class="text-center">S.NO</th> -->
                <th>Table Row ID</th>
                <th>User Name</th>
+               <th>Profile</th>
                <th>Email ID</th>
                <th>Phone</th>
                <th>Role</th>
@@ -32,6 +33,7 @@
                <!-- <th>{{i+customStart}}</th> -->
                <th >{{user.ROWID}}</th>
                <td>{{user.first_name}} {{user.last_name}}</td>
+               <!-- <td><img [src]="user.profile_url" alt="Zoho Image"></td> -->
                <td>{{user.email}}</td>
                <td>{{user.phone_number}}</td>
                <td>{{user.role == 1 ? 'Admin' : 'User'}}</td>
@@ -65,7 +67,7 @@
          </tbody>
       </table>
    </div>
-   <!-- <pre [innerHtml]="userList | json"> </pre> -->
+   <pre [innerHtml]="userList | json"> </pre>
 </div>
 
 
@@ -243,7 +245,7 @@
                <i class="bi bi-x-square pe-2"></i>Close</button>
             <button type="submit" class="btn btn-primary text-white" (click)="addUser()" [disabled]="userForm.invalid">
                <i class="bi bi-plus-square pe-2" ></i>  {{userForm?.value?.ROWID ? 'Update':'Save'}}</button>
-               <!-- <pre [innerHTML]="userForm.value | json"> </pre> -->
+               <pre [innerHTML]="userForm.value | json"> </pre>
          </div>
       </div>
    </div>

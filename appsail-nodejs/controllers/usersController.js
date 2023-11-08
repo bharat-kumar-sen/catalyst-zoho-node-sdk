@@ -7,7 +7,7 @@ var catalyst = require('zcatalyst-sdk-node');
 require("dotenv").config();
 const fileUpload = require('express-fileupload');
 const fs = require('fs');
-const catalystFolderId = '5261000000018071'
+const catalystFolderId = '5261000000021007'
 exports.saveUserInfo = async (req, res) => {
   const postData = req.body;
 
@@ -43,6 +43,7 @@ exports.uploadfileWithUser = async (req, res)=> {
   let postData = req.body;
   try {
     if(req.files) {
+      console.log("req.files======", req.files);
       const app = catalyst.initialize(req);
       req.files.image.name = Date.now() + "-" + req.files.image.name
       await req.files.image.mv(`/tmp/${req.files.image.name}`);
@@ -50,8 +51,15 @@ exports.uploadfileWithUser = async (req, res)=> {
         code: fs.createReadStream(`/tmp/${req.files.image.name}`),
         name: req.files.image.name
       });
-      postData.image =  "https://console.catalyst.zoho.in/baas/v1/project/5261000000007197/folder/5261000000018071/file/"+ fileRes.id +"/download";
+      // postData.img_details =  JSON.stringify({
+      //   imgUrl: "https://console.catalyst.zoho.in/baas/v1/project/5261000000007197/folder/5261000000018071/file/"+ fileRes.id +"/download",
+      //   file_id:  fileRes,id,
+      //   file_name: fileRes.file_name
+      // })
+      console.log("fileRes=====", fileRes);
+      postData.profile_url =  "https://console.catalyst.zoho.in/baas/v1/project/5261000000007197/folder/5261000000018071/file/"+ fileRes.id +"/download"
     } 
+    console.log("postData============", postData);
     if (postData.password) {
       postData.password = globalService.encryptString(postData.password);
     } else {

@@ -93,6 +93,7 @@ export class UsersComponent {
         // { data: 'sr-number' },
         { data: 'row-id' },
         { data: 'username' },
+        // { data: 'profile' },
         { data: 'phone_number' },
         { data: 'email' },
         { data: 'role' },
@@ -125,6 +126,7 @@ export class UsersComponent {
   createForm() {
     this.userForm = this.formBuilder.group({
       ROWID: '',
+      image: [''],
       first_name: ['', [Validators.required, Validators.minLength(2)]],
       last_name: ['', [Validators.required, Validators.minLength(2)]],
       email: ['', [Validators.required, Validators.minLength(3), Validators.email]],
@@ -204,7 +206,7 @@ export class UsersComponent {
     if (this.userForm.value.image) {
       this.userForm.value.previous_image = this.userForm.value.image;
     }
-    this.userForm.value.image =event.target.files[0];
+    this.userForm.value.image = event.target.files[0];
   }
 
   changeUserStatus(user: any) {
@@ -240,11 +242,18 @@ export class UsersComponent {
 
   addUser() {
     let userinfo: any = Object.assign({}, this.userForm.value);
+    console.log("this.userForm.value", this.userForm.value.image);
+    if(!this.userForm.value.image){
+      this.toastr.warning('Please select profile photo...', 'Success!');
+      return false;
+    }
     this.spinner.show()
     var formData = new FormData();
     Object.keys(userinfo).map((key)=>{
       console.log('key================', userinfo[key]);
-      formData.append(key, userinfo[key]);
+      if(userinfo[key]) {
+        formData.append(key, userinfo[key]);
+      }
     })
 
     this.usersService.saveUserInfoWithphoto(formData).subscribe({
@@ -264,6 +273,7 @@ export class UsersComponent {
         this.toastr.error(error.message, 'Error!');
       }
     });
+    return
   }
 
   showUserInfoModal(user: any) {
