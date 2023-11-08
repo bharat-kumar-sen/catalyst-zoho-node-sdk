@@ -20,7 +20,7 @@
                <!-- <th class="text-center">S.NO</th> -->
                <th>Table Row ID</th>
                <th>User Name</th>
-               <th>Profile</th>
+               <!-- <th>Profile</th> -->
                <th>Email ID</th>
                <th>Phone</th>
                <th>Role</th>
@@ -67,7 +67,7 @@
          </tbody>
       </table>
    </div>
-   <pre [innerHtml]="userList | json"> </pre>
+   <!-- <pre [innerHtml]="userList | json"> </pre> -->
 </div>
 
 
@@ -245,7 +245,7 @@
                <i class="bi bi-x-square pe-2"></i>Close</button>
             <button type="submit" class="btn btn-primary text-white" (click)="addUser()" [disabled]="userForm.invalid">
                <i class="bi bi-plus-square pe-2" ></i>  {{userForm?.value?.ROWID ? 'Update':'Save'}}</button>
-               <pre [innerHTML]="userForm.value | json"> </pre>
+               <!-- <pre [innerHTML]="userForm.value | json"> </pre> -->
          </div>
       </div>
    </div>
