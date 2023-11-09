@@ -150,6 +150,7 @@ export class UsersComponent {
   }
 
   getUsersList(dataTablesParameters?: any, callback?: any) {
+    console.log('111111111111')
     let DTParm = JSON.parse(JSON.stringify(dataTablesParameters))
     let pageConfig = {
       limit: DTParm.length,
