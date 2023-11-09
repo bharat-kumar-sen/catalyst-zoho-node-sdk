@@ -51,13 +51,12 @@ exports.uploadfileWithUser = async (req, res)=> {
         code: fs.createReadStream(`/tmp/${req.files.image.name}`),
         name: req.files.image.name
       });
-      // postData.img_details =  JSON.stringify({
-      //   imgUrl: "https://console.catalyst.zoho.in/baas/v1/project/5261000000007197/folder/5261000000018071/file/"+ fileRes.id +"/download",
-      //   file_id:  fileRes,id,
-      //   file_name: fileRes.file_name
-      // })
-      console.log("fileRes=====", fileRes);
-      postData.profile_url =  "https://console.catalyst.zoho.in/baas/v1/project/5261000000007197/folder/5261000000018071/file/"+ fileRes.id +"/download"
+      postData.profile_url =  JSON.stringify({
+        imgUrl: "https://console.catalyst.zoho.in/baas/v1/project/5261000000007197/folder/5261000000021007/file/"+ fileRes.id +"/download",
+        file_id:  fileRes,id,
+        file_name: fileRes.file_name
+      })
+      // postData.profile_url =  "https://console.catalyst.zoho.in/baas/v1/project/5261000000007197/folder/5261000000021007/file/"+ fileRes.id +"/download"
     } 
     console.log("postData============", postData);
     if (postData.password) {
