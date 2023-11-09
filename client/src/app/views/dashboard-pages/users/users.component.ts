@@ -183,6 +183,9 @@ export class UsersComponent {
     this.createForm();
     if(user) {
       user.password = '';
+      if(user.image) {
+        this.profileImage = user.image
+      }
       this.userForm.value = this.userForm.reset(user);
     } else {
       console.log('View User details', this.currentUser);
