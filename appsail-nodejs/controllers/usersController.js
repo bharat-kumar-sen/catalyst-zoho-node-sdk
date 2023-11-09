@@ -8,6 +8,7 @@ require("dotenv").config();
 const fileUpload = require('express-fileupload');
 const fs = require('fs');
 const catalystFolderId = '5261000000021007'
+const catalstProjectId = '5261000000007197'
 exports.saveUserInfo = async (req, res) => {
   const postData = req.body;
 
@@ -51,15 +52,13 @@ exports.uploadfileWithUser = async (req, res)=> {
         code: fs.createReadStream(`/tmp/${req.files.image.name}`),
         name: req.files.image.name
       });
-      // postData.img_details =  JSON.stringify({
-      //   imgUrl: "https://console.catalyst.zoho.in/baas/v1/project/5261000000007197/folder/5261000000018071/file/"+ fileRes.id +"/download",
-      //   file_id:  fileRes,id,
-      //   file_name: fileRes.file_name
-      // })
-      console.log("fileRes=====", fileRes);
-      postData.profile_url =  "https://console.catalyst.zoho.in/baas/v1/project/5261000000007197/folder/5261000000018071/file/"+ fileRes.id +"/download"
+      postData.profile_details=  JSON.stringify({
+        imgUrl: "https://console.catalyst.zoho.in/baas/v1/project/"+catalstProjectId+"/folder/"+catalystFolderId+"/file/"+ fileRes.id +"/download",
+        file_id:  fileRes.id,
+        file_name: fileRes.file_name
+      })
+      // postData.profile_url =   "https://console.catalyst.zoho.in/baas/v1/project/"+catalstProjectId+"/folder/"+catalystFolderId+"/file/"+ fileRes.id +"/download"
     } 
-    console.log("postData============", postData);
     if (postData.password) {
       postData.password = globalService.encryptString(postData.password);
     } else {
@@ -80,6 +79,7 @@ exports.uploadfileWithUser = async (req, res)=> {
       })
       // res.redirect(req.get('referer')); //Reloads the page again after a successful insert
     }).catch(err => {
+      console.log("err--------", err);
       return res.status(500).json({
         message: "There are some error while save user.",
         status: 500,
@@ -87,6 +87,7 @@ exports.uploadfileWithUser = async (req, res)=> {
       })
     });
 	} catch (error) {
+    console.log("error--------", error);
 		res.status(500).send({
 			"status": "Internal Server Error",
 			"message": error
@@ -139,6 +140,8 @@ exports.doSignIn = async (req, res) => {
         // console.log("process.env.TOKEN_EXPIRE======", process.env.TOKEN_EXPIRE)
         userDetails = JSON.parse(JSON.stringify(userDetails));
         userDetails.authorization = token;
+        userDetails.profile_details =  JSON.parse(userDetails.profile_details )
+        userDetails.profileImage = userDetails.profile_details.imgUrl;
         req.session.currentUser = userDetails;
         delete userDetails.password;
         return res.json({
@@ -173,6 +176,11 @@ exports.getUsersList = async (req, res) => {
 	var Usertbl = await this.catalystZohoTableConfig(req, 'users');
   try {
     let userDetails = await Usertbl.getPagedRows({ maxRows: 100 }) 
+    userDetails.data.map( (element)=> {
+      if(element.profile_details){
+        element.profile_details = JSON.parse(element.profile_details);
+      }
+    })
     return res.json({
       status: 200,
       message: "Get the user list successfully.",

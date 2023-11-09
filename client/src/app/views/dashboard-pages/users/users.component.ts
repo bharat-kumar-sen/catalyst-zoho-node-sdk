@@ -93,7 +93,7 @@ export class UsersComponent {
         // { data: 'sr-number' },
         { data: 'row-id' },
         { data: 'username' },
-        // { data: 'profile' },
+        { data: 'profile' },
         { data: 'phone_number' },
         { data: 'email' },
         { data: 'role' },

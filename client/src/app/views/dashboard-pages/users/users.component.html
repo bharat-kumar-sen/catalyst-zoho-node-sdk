@@ -11,7 +11,7 @@
             </h4>
          </div>
       </div>
-      <!-- <img src="https://console.catalyst.zoho.in/baas/v1/project/5261000000007197/folder/5261000000018071/file/5261000000018071/download" alt="Zoho Image"> -->
+      <!-- <img src="https://console.catalyst.zoho.in/baas/v1/project/5261000000007197/folder/5261000000021007/file/5261000000021054/download" alt="Zoho Image"> -->
 
       <table [dtOptions]="dtOptions" datatable [dtTrigger]="dtTrigger"
          class="table table-bordered table-hover table-striped user-table-font">
@@ -25,7 +25,7 @@
                <th>Phone</th>
                <th>Role</th>
                <th>Status</th>
-               <th class="text-center w-25">ACTION</th>
+               <th class="text-center">ACTION</th>
             </tr>
          </thead>
          <tbody>
@@ -33,7 +33,7 @@
                <!-- <th>{{i+customStart}}</th> -->
                <th >{{user.ROWID}}</th>
                <td>{{user.first_name}} {{user.last_name}}</td>
-               <!-- <td><img [src]="user.profile_url" alt="Zoho Image"></td> -->
+               <td><img [src]="user.profile_details ? user.profile_details.imgUrl : 'assets/img/def-user-db.png'" alt="Zoho Image" width="50"></td>
                <td>{{user.email}}</td>
                <td>{{user.phone_number}}</td>
                <td>{{user.role == 1 ? 'Admin' : 'User'}}</td>
