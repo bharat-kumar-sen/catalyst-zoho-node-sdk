@@ -33,7 +33,7 @@
                <!-- <th>{{i+customStart}}</th> -->
                <th >{{user.ROWID}}</th>
                <td>{{user.first_name}} {{user.last_name}}</td>
-               <td><img [src]="user.profile_url ? user.profile_url : 'assets/img/def-user-db.png'" alt="Zoho Image" width="50"></td>
+               <td><img [src]="user.profile_details ? user.profile_details.imgUrl : 'assets/img/def-user-db.png'" alt="Zoho Image" width="50"></td>
                <td>{{user.email}}</td>
                <td>{{user.phone_number}}</td>
                <td>{{user.role == 1 ? 'Admin' : 'User'}}</td>
