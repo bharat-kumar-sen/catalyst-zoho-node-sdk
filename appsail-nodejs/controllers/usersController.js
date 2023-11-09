@@ -179,6 +179,7 @@ exports.getUsersList = async (req, res) => {
     userDetails.data.map( (element)=> {
       if(element.profile_details){
         element.profile_details = JSON.parse(element.profile_details);
+        element.image = element.profile_details.imgUrl
       }
     })
     return res.json({
